@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /*  ------------------------------------------------------ format  */
+        /* selector:pseudo-class {
+            property: value;
+        } */
+
+        /* -----------------------------------------------------  format  */
+        a {
+            font-size: 100px;
+            background-color: black;
+            color: white;
+            padding: 50px 100px;
+        }
+
+        a:link {
+            /* this is unvisited or unclicked link */
+            color: red;
+        }
+
+
+        a:visited {
+            /*This is the visited link or link that has been clicked*/
+            color: green;
+        }
+
+        a:active {
+            /*When the element is seleced    (keep holding the mouse left click)*/
+            color: pink;
+        }
+
+        a:hover {
+            /*This is when we move or hover mouse over the specified element*/
+            color: blue;
+        }
+
+        input:focus {
+            /*When the field is being used*/
+            background-color: yellow;
+        }
+
+        section {
+            margin-top: 100px;
+        }
+
+        section div:nth-child(2) {
+            /*This selects the second div child of section */
+            background-color: red;
+        }
+
+        section.red {
+            background-color: black;
+        }
+
+        div {
+            color: blue;
+        }
+
+        q:lang(no) {
+            quotes: "=" "/";
+            /*adds any quotes inforont and back to the element, provided here if the lang is same as provided here*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.facebook.com/" target="_blank">This is a link</a>
+    <input type="text" placeholder="enter data">
+    <section>
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+        <div>child6</div>
+    </section>
+    <section class="red">
+        <div class="red">aa</div>
+    </section>
+
+
+    <div>
+        <p>Hello</p> <q lang="no">Aswin</q>
+        <p>aa</p>
+    </div>
+</body>
+
+</html>
