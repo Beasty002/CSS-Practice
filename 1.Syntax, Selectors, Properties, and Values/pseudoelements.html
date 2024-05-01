@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        P::first-letter {
+            /*Selects the first letter inside the tag*/
+            color: red;
+        }
+
+        .newp::first-line {
+            /*Selects the first line inside the tag*/
+            background-color: gray;
+        }
+
+        .div1::before {
+            /*adds content before the content of the provided element*/
+            content: "I am from before";
+            color: red;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .div2 {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .div2::after {
+            /*adds content after the content of the provided element*/
+            content: "";
+            color: red;
+            background-color: black;
+            width: 15ch;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            height: 10px;
+            border-radius: 20px;
+        }
+
+        ::marker {
+            /*applies css the the marker of the lists*/
+            color: red;
+        }
+
+        ::selection {
+            /* applies the css when we drag and select the portion of the page  only can change outline , background , cursor and color*/
+            background-color: yellow;
+            color: red;
+            cursor: grab;
+            outline: 40px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This the the p tag</p>
+    <p class="newp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa quo quae maxime aliquam
+        veritatis beatae modi nostrum fugit eaque, non sequi rem praesentium, in incidunt deleniti accusamus.
+        Asperiores, nihil?</p>
+
+    <div class="div1">Hello this is div 1</div>
+    <div class="div2">Hello this is div 2</div>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+</body>
+
+</html>
