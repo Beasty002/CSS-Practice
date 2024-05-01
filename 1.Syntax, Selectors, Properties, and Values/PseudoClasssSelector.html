@@ -20,10 +20,11 @@
 
         /* -----------------------------------------------------  format  */
         a {
-            font-size: 100px;
+            font-size: 1.5rem;
             background-color: black;
             color: white;
-            padding: 50px 100px;
+            padding: 0.2em 0.8em;
+            margin-bottom: 10px;
         }
 
         a:link {
@@ -73,11 +74,88 @@
             quotes: "=" "/";
             /*adds any quotes inforont and back to the element, provided here if the lang is same as provided here*/
         }
+
+        input:in-range {
+            /*CSS is applied when the the value is between the min and max range*/
+            background-color: rgba(140, 0, 0, 0.537);
+        }
+
+        input[type="text"]:enabled {
+            /*if the input filed is enabled*/
+            background-color: red;
+        }
+
+        input[type="text"]:disabled {
+            /*if the input filed is disabled*/
+            background-color: pink;
+        }
+
+        input:invalid {
+            /*IF the input field is invalid css here is applied*/
+            border: solid 2px red;
+            margin-top: 20px;
+        }
+
+        div:first-of-type {
+            /*selects every div that is first div of the parent*/
+            font-size: 1.3rem;
+            color: green;
+        }
+
+        div:last-child {
+            /*selects every div that is last div of its parent*/
+            background-color: gray;
+        }
+
+        :not(div) {
+            /*selects everything that is not a div*/
+            padding: 5px;
+        }
+
+        q:only-child {
+            /*Selects the only q that is the only child of its parent*/
+            font-size: 30px;
+        }
+
+        input:optional {
+            /*selects all input that is doesnot have "required" attribute */
+            background-color: blue;
+        }
+
+        input:out-of-range {
+            /*IF the input is more than the max value*/
+            border: 10px solid blue;
+        }
+
+        input:read-only {
+            /*Applied to input with readonly attribute*/
+
+            background-color: yellow;
+        }
+
+        input:read-write {
+            /*Applied to input with no "readonly" attribute*/
+            border-radius: 40px;
+        }
+
+        input:required {
+
+            border-left: 40px solid red;
+            border-color: violet;
+        }
+
+        :target {
+            /*applies the css to the link provided in "a" or anchor tag*/
+            border: solid 20px red;
+        }
+
+        input:valid {
+            background-color: aqua;
+        }
     </style>
 </head>
 
 <body>
-
     <a href="https://www.facebook.com/" target="_blank">This is a link</a>
     <input type="text" placeholder="enter data">
     <section>
@@ -91,11 +169,26 @@
         <div class="red">aa</div>
     </section>
 
+    <div>asnknak</div>
 
     <div>
-        <p>Hello</p> <q lang="no">Aswin</q>
+        <p>Hello</p>
+        <p> <q lang="no">Aswin</q></p>
+        <q lang="no">Aswin</q>
         <p>aa</p>
+
     </div>
+    <input type="number" min="5" max="10" value="6" required>
+    <input type="text" name="" id="" placeholder="Enabled" required>
+    <input type="text" name="" id="" placeholder="Enabled" required>
+    <input type="text" name="" id="" disabled placeholder="Disabled" readonly value="hello" readonly>
+    <input type="email" name="" id="" value="email..">
+    <input readonly value="hello">
+
+    <a href="#beasty">Click me to see the change in Beasty</a>
+    <p id="beasty">I am beasty</p>
 </body>
 
 </html>
+
+<!-- remaiining more -->
