@@ -22,7 +22,7 @@
 
 - Basic syntax and structure of CSS. ✅
 - Types of selectors (element, class, ID, attribute).✅ 
-- Specificity and inheritance.
+- Specificity and inheritance.✅
 - Units of measurement (px, em, rem, %, etc.).
 - Pseudo-classes and pseudo-elements.✅
 
