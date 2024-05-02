@@ -18,7 +18,7 @@
 14. [Browser Developer Tools](#browser-developer-tools)
 15. [Projects and Practice](#projects-and-practice)
 
-## Syntax, Selectors, Properties, and Values                            ✅
+## Syntax, Selectors, Properties, and Values                            
 
 - Basic syntax and structure of CSS. ✅
 - Types of selectors (element, class, ID, attribute).✅ 
