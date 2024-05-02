@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance and Specifily</title>
+    <style>
+        /*CSS priority level
+        inline > internal > external
+        !imortang > inline > id > class > tag/element
+
+        also incase of element with same specifity the one more below get the highere specifity
+        --------------------------------
+        specifity value :- 
+        !important = 1000+
+        Inline = 1000
+        id = 100
+        class =  10
+        tag/element = 1
+        */
+        #testId,
+        #testId1 {
+            /* specifity is 100*/
+            color: blue;
+        }
+
+        .test {
+            /* specifity is 10*/
+            color: gray;
+        }
+
+        p {
+            /* specifity is 10*/
+            color: red;
+        }
+
+        h1 {
+            color: blueviolet !important;
+            /*OVerrides all css rule*/
+        }
+
+        p.test1.test2 {
+            /*specifity =  1 + 10 + 10 = 21*/
+            color: greenyellow;
+        }
+
+        #div1 {
+            background-color: red;
+        }
+
+        div[id=div1] {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="test" id="testId">HEllo world</p>
+    <p class="test" id="testId1" style="color: aqua;">HEllo world</p>
+    <h1 style="color: green;">YO i am from h1</h1>
+    <p class="test1 test2" id="test3">I am p with two class</p>
+    <div id="div1">Hello</div>
+</body>
+
+</html>
