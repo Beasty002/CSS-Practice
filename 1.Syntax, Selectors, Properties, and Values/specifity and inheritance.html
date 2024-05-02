@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inheritance and Specifily</title>
     <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
         /*CSS priority level
         inline > internal > external
         !imortang > inline > id > class > tag/element
@@ -52,6 +56,43 @@
         div[id=div1] {
             background-color: pink;
         }
+
+        /*-------------------------------------inheritance-----------------------------------------------------------*/
+
+        /*It controls what happens when no value is specified for a property on an element*/
+        main {
+            color: red;
+            /*This property color of main in inherited by its child automatically but not all others*/
+            border: solid black 2px;
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+
+        em {
+            all: initial;
+            /*used to change all value of element to inherit initial unset or  revery*/
+            /*Applies the initial or the default or before the the user agent stylesheet value to the element*/
+            border: inherit;
+            /*now it inherits the border from its parent*/
+        }
+
+        section {
+            background-color: red;
+        }
+
+        .section1 {
+            background-color: gray;
+        }
+
+        #section1 {
+            background-color: revert;
+            /*Reverts the css to one layer behind i.e now to the before browser*/
+        }
+
+        button {
+            font-family: unset;
+            /*if inherit than change to initial and vice versa*/
+        }
     </style>
 </head>
 
@@ -61,6 +102,14 @@
     <h1 style="color: green;">YO i am from h1</h1>
     <p class="test1 test2" id="test3">I am p with two class</p>
     <div id="div1">Hello</div>
+
+    <main>Hello
+        <em>I am child p of main
+
+        </em>
+    </main>
+    <section class="section1" id="section1">This is section</section>
+    <button>CLick me</button>
 </body>
 
 </html>
