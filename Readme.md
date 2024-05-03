@@ -28,7 +28,7 @@
 
 ## CSS Layout
 
-- Positioning (static, relative, absolute, fixed).
+- Positioning (static, relative, absolute, fixed,a sticky).
 - Floats and clearing floats.
 - Flexbox layout properties and alignment.
 - CSS Grid layout and grid properties.
