@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        /*Not a good way to approach layout so dont't use */
+        section {
+            border: 2px solid red;
+            /* overflow: auto; */
+            /*This doesn't let the content inside the container to over flow it also stops the visibility box shadow of the content if it overflows the container*/
+            display: flow-root;
+            /*Similar to overflow auto This doesn't let the content inside the container to over flow along with box shadow */
+
+
+        }
+
+        img {
+            float: left;
+            /*This makes the element float in the left meaning it allows contnet in the right of its side , if left is used than allows content on the right moving itself to the left side*/
+            /*this might make the image overflow*/
+            box-shadow: 10px 10px red;
+        }
+
+        p:nth-child(3) {
+            clear: left;
+            /*This does not allow contents to float on the direction specified in the value so it moves below the content,in this case on left , other value that can be used are right both and none*/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="https://buffer.com/library/content/images/2023/10/free-images.jpg" alt="" width="400">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, soluta perferendis nulla cum, recusandae,
+            mollitia labore autem cupiditate aut hic minus iusto explicabo quos ut ipsa quam quae similique eveniet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et sed error eligendi. Quidem
+            necessitatibus
+            nulla tempora excepturi repellendus amet vitae unde corrupti harum? Totam excepturi repellendus
+            exercitationem
+            -- quidem doloremque et neque autem itaque, unde dolore deleniti corporis tempore! Mollitia fuga aliquam quo
+            qui
+            error excepturi, reprehenderit eius perspiciatis, blanditiis unde sunt reiciendis odio. Nemo enim recusandae
+            id,
+            sunt beatae quibusdam incidunt reprehenderit expedita impedit voluptas velit alias deserunt ipsam autem
+            suscipit
+            ipsa culpa ullam quaerat! Quasi impedit id praesentium ratione non deleniti perferendis provident
+            necessitatibus
+            voluptate odit exercitationem odio in sapiente, tenetur aliquid similique inventore cum sit eius nihil iste
+            quos
+            consequuntur modi ut! Reprehenderit quo blanditiis adipisci expedita fugiat dicta provident veritatis
+            inventore,
+            obcaecati quidem eos tempore esse omnis vel nulla animi distinctio harum magni facere voluptas? Voluptate
+            fugiat
+            cupiditate, illo perferendis eius nulla amet adipisci quas in facilis recusandae culpa. Earum vel a mollitia
+            enim natus architecto quis, atque quisquam aperiam quos aut nam pariatur, at molestias aliquam repudiandae
+            dignissimos veniam sint blanditiis quia. Cumque libero ullam, reiciendis fugiat nisi tempore repudiandae
+            autem
+            vero in eum placeat est omnis recusandae molestiae maiores ducimus enim iure corrupti praesentium beatae -->
+            temporibus nemo inventore? Quibusdam eius ad veritatis numquam minus recusandae aperiam, temporibus beatae
+            cumque iste quidem non earum veniam reprehenderit provident fugit perferendis dignissimos, voluptatum
+            consectetur sequi at sapiente atque doloremque quisquam? Doloribus nesciunt itaque saepe rerum debitis
+            commodi,
+            non enim voluptatibus illo ad qui tempora earum officiis? Molestiae quis veritatis quos totam reiciendis
+            quaerat
+            odit molestias error expedita fugit in voluptatum eveniet repellendus provident fuga doloribus ipsam omnis,
+            qui
+            vitae, maxime hic harum obcaecati pariatur! Molestiae voluptas veritatis tenetur saepe laboriosam, rem, ad
+            eos
+            enim odit fugiat assumenda. Incidunt, dolores ullam nostrum eius temporibus ab? Saepe distinctio sed
+            provident
+            voluptate, cupiditate dignissimos dolor nihil tempore explicabo aliquam numquam facilis veritatis id error
+            pariatur quo placeat maiores earum tempora. Eligendi est nam, delectus, saepe voluptates odit eaque error
+            vitae
+            ab quasi amet sequi impedit, repudiandae nemo veniam eveniet assumenda asperiores. Nostrum est impedit
+            labore
+            suscipit distinctio, consequatur dolores tempore ab in consequuntur voluptatum eligendi esse sit quisquam,
+            quos
+            tenetur. Beatae eveniet minima vel eligendi, distinctio illum asperiores dolorum sint tenetur eius earum
+            minus,
+            nulla dicta. Recusandae repellendus iusto magnam possimus consequuntur modi odit, asperiores rerum officiis,
+            cupiditate ipsa accusamus maiores enim commodi perspiciatis similique voluptatibus hic optio pariatur
+            corporis
+            eum tempora maxime voluptatem a. Reprehenderit omnis ducimus non iusto.
+        </p>
+    </section>
+
+
+</body>
+
+</html>
