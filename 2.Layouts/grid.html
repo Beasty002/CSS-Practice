@@ -60,15 +60,15 @@
             padding: 10px;
             border: solid 10px black;
             display: grid;
-            grid-template-columns: repeat(4, 50px);
-            grid-template-rows: repeat(2, 100px);
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            /*here this makes the container responsive by making the number of coumns "auto fit" which adjust the number according to the container size or available space */
+            grid-template-rows: repeat(4, 50px);
             gap: 10px;
             justify-content: space-around;
             /*Aligns whole content as defined in the row axis has same values as of in flex's justify content*/
 
             align-content: center;
             /*Aligns whole content as defined in the column axis has same values as of in flex's justify content*/
-
         }
 
         .container1 .new-item1 {
