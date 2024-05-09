@@ -32,7 +32,7 @@
 - Floats and clearing floats.✅
 - Flexbox layout properties and alignment.✅
 - CSS Grid layout and grid properties. ✅
-- CSS Multi-column layout.
+- CSS Multi-column layout.✅
 
 ## Typography
 
