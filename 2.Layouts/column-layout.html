@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coulumn Rule</title>
+    <style>
+        .container1 {
+            height: 400px;
+            column-count: 4;
+            /*Divides the child into the number of column present here , here the paragraph in ".container1" is divided into four column*/
+            column-width: 100px;
+            /*This specifes the width of the column this is overwritten by "column-count" so use one when the other is not specified , this property is flexible so when the think of it like minimum heigh when the coulumn couldn't provide the specified width the coulmn would collapse and merge with another*/
+            column-fill: auto;
+            /*When the heigh is specified in the container then the coulumn fill would help to specify how to fill the coulumn the "auto" would fill the coulmn until it reaches the specified heigh and the balance would fill all the cotianer with about same amount of content*/
+
+            columns: 100px 5;
+            /* This defines the minimum width for each coulumn and the maximum number of column */
+            column-gap: 100px;
+            /*Defines the gap/space between the column*/
+            column-rule-style: dashed;
+            /* This defines the how the dividing line between the coulumn would look like */
+            column-rule-width: 10px;
+            /* This defines the width of the dividing line between the coulumn */
+            column-rule-color: blue;
+            /* This defines the color of the dividing line between the coulumn */
+            column-rule: 1px solid red;
+            /*This is the short form for column rule style width and color*/
+        }
+
+        h1 {
+            column-span: all;
+            /*This defines how many column the specified child would span to , and value "all" is possible but not numeric value */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eligendi iste laudantium fugit, magnam omnis
+            ab quaerat temporibus repellendus tempore in nam officiis molestias ullam natus voluptatem enim pariatur
+            deserunt?</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eum iure officiis expedita! Cupiditate sunt in
+        consequuntur minima, ullam dignissimos incidunt suscipit officia illum? Omnis nemo id ipsum ratione totam
+        explicabo deserunt minima voluptas rerum, tenetur dolorem non eaque rem illum ab magni ad sunt ipsam officia
+        impedit. Laboriosam perferendis a esse voluptas ad pariatur iusto architecto impedit, corrupti assumenda tempora
+        cum. Aspernatur ducimus, officia voluptatem earum, doloremque tenetur magnam id at maxime explicabo et iusto
+        fugit commodi nobis eos numquam quae impedit, incidunt inventore vitae consequuntur rerum unde? Ipsum, inventore
+        provident! Sequi omnis placeat optio fugiat cupiditate laborum saepe nobis ullam illum maiores maxime delectus
+        soluta eos earum dolore reprehenderit, quisquam consequatur libero, rem voluptate, assumenda temporibus deleniti
+        iste. Odio perspiciatis possimus natus. Earum eos, maxime alias natus necessitatibus eius? Assumenda hic culpa
+        eligendi, necessitatibus earum amet sint laborum sunt! Ratione pariatur architecto ab modi deleniti enim officia
+        assumenda, minima porro perferendis ea, culpa omnis unde tempora fugiat officiis nemo necessitatibus saepe
+        corrupti impedit ut deserunt? Nobis ratione magni quaerat laborum odio aliquid ex aut, ad blanditiis ullam quasi
+        at asperiores sint, eveniet aliquam! Quia praesentium rerum eius asperiores dicta mollitia nihil accusantium
+        ipsum vitae quisquam velit est autem inventore consequuntur ullam, laudantium non facere unde. Aperiam
+        consequatur dolores, aliquid cupiditate dolore enim, corporis veniam animi sunt distinctio exercitationem
+        debitis mollitia odit? Aliquam fugit ratione, tempora dolorum earum asperiores unde sit nam esse provident.
+        Maiores aliquid, iure natus dicta dolore obcaecati quis autem repellat eius alias laboriosam corporis pariatur
+        possimus beatae ipsum ab accusamus nulla, eos consequuntur harum odit, suscipit quod culpa perferendis! Quae
+        maxime iusto accusamus. Incidunt quidem non deserunt aspernatur consectetur quod dolores mollitia voluptatum
+        earum tenetur! Sunt amet atque quasi, voluptatem nobis dicta est culpa placeat explicabo ut ipsum vero, ducimus
+        eligendi aliquam quas voluptatibus obcaecati molestiae eum. Id natus quas ipsum laborum inventore? Ex, quod,
+        aliquam corporis maiores accusantium praesentium voluptatem aut eligendi laudantium placeat expedita, numquam id
+        non odio in! Perferendis expedita, quae vero labore fuga adipisci tenetur dolorum rerum, consequuntur possimus,
+        repellendus aliquam ipsa laboriosam. Minima vel ad, ducimus ut, deleniti ea libero magnam, laudantium amet ipsum
+        consequuntur. Nisi minima reiciendis corporis necessitatibus recusandae rerum magni aperiam earum repellendus
+        sequi, eum ullam praesentium ex fugit facilis inventore perferendis voluptate maiores dolorem temporibus omnis
+        non velit accusamus sed? Dignissimos sapiente quibusdam tempore saepe, tempora quam ipsum dolorem harum
+        recusandae est, possimus rem cupiditate numquam, odio aut obcaecati sit impedit alias repellat voluptates
+        asperiores cum adipisci accusantium? Distinctio aspernatur porro sequi molestias excepturi placeat, ipsum
+        mollitia earum aut corporis repellendus reprehenderit labore incidunt iste sapiente accusantium necessitatibus?
+        Ab mollitia eveniet aspernatur similique nemo voluptatibus aliquam, delectus ut quae officia repudiandae impedit
+        optio officiis! Voluptates libero ullam voluptas obcaecati dignissimos quidem labore eligendi minus, quos, a
+        vitae! Fuga, blanditiis. Praesentium quia laudantium dolores earum placeat nulla provident voluptates ipsa, ad
+        aspernatur deleniti voluptate ipsum veritatis, tempore impedit possimus laboriosam atque, dolorem ratione
+        deserunt. Cumque quas, provident, tenetur suscipit deserunt inventore voluptatibus laudantium vitae laboriosam
+        quos voluptatum!
+    </div>
+</body>
+
+</html>
