@@ -38,7 +38,7 @@
 
 - Font properties (family, size, weight, style, variant).
 - Text properties (alignment, decoration, spacing, transformation).
-- Text shadow.
+- Text shadow. 
 
 ## Box Model
 
