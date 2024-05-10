@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            /*Used to set the type of font to use ,  the first font family provided is added to the text but in absence of the font fammily the next in the line is applied */
+            font-size: xx-large;
+            /* Used to define the text's size , we can use units with value or small,large,medium ..... which are set according to the browsers default size for those term*/
+            font-style: oblique;
+            /*This is used to define how the text is slanted values are normal , italic and oblique    
+            itallic and oblique may seem same but oblique is slightly more slanted than itallic*/
+            font-variant: small-caps;
+            /*Defines which glyph(representaion) to use for each letter. values are normal and "small-caps" which sets the all the letter to be capital where the first lettle is bigger than the others*/
+            font-weight: bold;
+            /* This defines the weight or (boldness/lightness) of the text*/
+            letter-spacing: 2px;
+            /*This defines the space between the letters*/
+            line-height: 30px;
+            /* This defines the height of the line of text */
+            text-align: left;
+            /* Defines which side the text should be aligned to*/
+            text-decoration: line-through;
+            /* Defines how the text is decorated*/
+            text-indent: 40px;
+            /* this applies the indentation or the white space to the text's first line*/
+
+        }
+
+        p {
+            margin: auto;
+            width: 400px;
+            text-overflow: ellipsis;
+        }
+
+        span {
+            text-indent: 0px;
+            display: block;
+            white-space: nowrap;
+            /*this doesn't allow content to move to next line*/
+            width: 150px;
+            overflow: hidden;
+            /*THis hides the content that overflows from the element*/
+            text-overflow: ellipsis;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic amet eius laboriosam reiciendis inventore non
+        itaque tempore distinctio corrupti. Perspiciatis magnam consequuntur obcaecati neque natus atque beatae. Omnis,
+        iure eligendi.</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum officiis commodi f</span>
+
+</body>
+
+</html>
