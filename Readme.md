@@ -44,7 +44,7 @@
 
 - Understanding the box model (content, padding, border, margin).✅
 - Box-sizing property.
-- Overflow property.
+- Overflow property.✅
 
 ## Colors and Backgrounds
 
