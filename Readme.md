@@ -42,7 +42,7 @@
 
 ## Box Model
 
-- Understanding the box model (content, padding, border, margin).
+- Understanding the box model (content, padding, border, margin).✅
 - Box-sizing property.
 - Overflow property.
 

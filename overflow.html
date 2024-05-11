@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div {
+            background-color: rgb(255, 168, 168);
+            width: 110px;
+            height: 110px;
+            overflow-anchor: auto;
+            /* THis property allows us to control the behaviour of adjust scrolling when there is content shift , 'auto' turns offs the feature off meaning when there is content shift the will not be adjusting of scroll . */
+        }
+
+        section {
+            position: absolute;
+            right: 150px;
+            top: 0;
+            border: 10px solid black;
+            width: 200px;
+            overflow-wrap: normal;
+            /* Let the browser be allowed to break lines with long words, if they overflow the container: 
+             normal - When there is long word than the width of the container then the word is overflown from the container , this is default
+             anywhere - long word will break if they overflow the container.
+             break-word - long word will break if they overflow the container.
+            break-word breaks long words only when necessary, while anywhere breaks words at any character to prevent overflow.
+             */
+        }
+
+        div.ex1 {
+            overflow-x: auto;
+            /* sees over the overflow in horizantal direction */
+            overflow-y: auto;
+            /* sees over the overflow in vertical direction */
+            overflow: scroll;
+            /* overflow is short form for over flow x and y */
+            /* The overflown content is clipped but a scroll bar is added in x and y direction to scroll and see the contentSS*/
+        }
+
+        div.ex2 {
+            overflow: hidden scroll;
+            /* 	The overflow is clipped, and the rest of the content will be invisible. Content can be scrolled programmatically (e.g. by setting scrollLeft or scrollTo()) */
+        }
+
+        div.ex3 {
+
+            overflow: auto;
+            /* if the content overflows then the scrollbar is added to see rest of the content */
+        }
+
+        div.ex4 {
+            overflow: clip;
+            /* the content is clipped and forbids scrolling including programmatic scrolling */
+            /* programmatic scrolling = scrolling through the code rather than ui */
+        }
+
+        div.ex5 {
+            overflow: visible;
+            /*The content is not cipped it overflows outside the content box*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The overflow Property</h1>
+
+    <p>The overflow property specifies whether to clip content or to add scrollbars when an element's content is too big
+        to fit in a specified area.</p>
+
+    <h2>overflow: scroll:</h2>
+    <div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat.</div>
+
+    <h2>overflow: hidden:</h2>
+    <div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat.</div>
+
+    <h2>overflow: auto:</h2>
+    <div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat.</div>
+
+    <h2>overflow: clip:</h2>
+    <div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat.</div>
+
+    <h2>overflow: visible (default):</h2>
+    <div class="ex5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat.</div>
+    <section>
+        Lorem ipsum, dolor sit amet consectetur adipddddddddddddddfdddddddddddisicing elit. Esse asperiores quia amet
+        nam
+        placeat. Repellat
+        praesentium deleniti quia mollitia, molestiae explicabo velit natus tempore amet quis, aliquam iste. At,
+        corrupti!
+    </section>
+</body>
+
+</html>
