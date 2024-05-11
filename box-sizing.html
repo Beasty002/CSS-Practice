@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        body {
+            display: flex;
+            gap: 10px;
+        }
+
+        div {
+            width: 400px;
+            height: 600px;
+            border: 10px solid black;
+            padding: 20px;
+        }
+
+        .div1 {
+            box-sizing: border-box;
+            /*box-sizing defines how the height and the width of the element is calculated , should they include the paddinga and border or not*/
+            /* with 'border-box' the border and padding are included as the element's own height and width */
+            /* as default the total height and width was calculate as defined length+padding+border but with border box there is only one defined height or width and both padding/margin are included in it */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Border Box</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis laudantium cum ratione
+        ipsum
+        natus! Voluptate, itaque optio sed provident, dolores recusandae quae facilis dicta quasi aut at. At voluptate
+        commodi quidem dolor esse nisi, iste amet corrupti. Optio tenetur iusto incidunt aspernatur. Nostrum deserunt
+        dolorum aspernatur voluptatem similique voluptates ratione quia amet! Dolorem rem, autem eius nesciunt ipsa,
+        culpa quibusdam modi blanditiis hic pariatur minima natus? Fugit debitis id soluta! Ipsa quibusdam architecto
+        unde cumque illo ut fuga commodi numquam quas laboriosam maxime, in accusantium eveniet quo iure. Amet
+        voluptatem vitae ducimus asperiores voluptatum sit, culpa at incidunt sed temporibus odio aspernatur doloremque
+        consequuntur aliquid dolorem iure officia nobis, explicabo aliquam fugiat cupiditate nisi corrupti! Et modi
+        deserunt, vero impedit placeat cupiditate itaque totam temporibus maxime deleniti tempore doloribus atque quam
+        ipsam consectetur porro explicabo soluta pariatur reiciendis eum! Hic autem dolor quaerat totam provident
+        temporibus fugiat est, eveniet ducimus soluta perferendis eum consectetur voluptatibus ratione quas doloremque
+        quos! Consequuntur et eius laudantium blanditiis, alias enim perspiciatis autem non nihil deleniti maiores totam
+        voluptate dolorem odio, facilis incidunt. Illo amet officia excepturi ad qui repudiandae deleniti illum. Quam
+        distinctio mollitia explicabo cum laudantium ut, voluptatibus similique accusantium cumque eveniet.
+    </div>
+    <div class="div2">
+        <h1>No Border Box</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis laudantium cum ratione
+        ipsum
+        natus! Voluptate, itaque optio sed provident, dolores recusandae quae facilis dicta quasi aut at. At voluptate
+        commodi quidem dolor esse nisi, iste amet corrupti. Optio tenetur iusto incidunt aspernatur. Nostrum deserunt
+        dolorum aspernatur voluptatem similique voluptates ratione quia amet! Dolorem rem, autem eius nesciunt ipsa,
+        culpa quibusdam modi blanditiis hic pariatur minima natus? Fugit debitis id soluta! Ipsa quibusdam architecto
+        unde cumque illo ut fuga commodi numquam quas laboriosam maxime, in accusantium eveniet quo iure. Amet
+        voluptatem vitae ducimus asperiores voluptatum sit, culpa at incidunt sed temporibus odio aspernatur doloremque
+        consequuntur aliquid dolorem iure officia nobis, explicabo aliquam fugiat cupiditate nisi corrupti! Et modi
+        deserunt, vero impedit placeat cupiditate itaque totam temporibus maxime deleniti tempore doloribus atque quam
+        ipsam consectetur porro explicabo soluta pariatur reiciendis eum! Hic autem dolor quaerat totam provident
+        temporibus fugiat est, eveniet ducimus soluta perferendis eum consectetur voluptatibus ratione quas doloremque
+        quos! Consequuntur et eius laudantium blanditiis, alias enim perspiciatis autem non nihil deleniti maiores totam
+        voluptate dolorem odio, facilis incidunt. Illo amet officia excepturi ad qui repudiandae deleniti illum. Quam
+        distinctio mollitia explicabo cum laudantium ut, voluptatibus similique accusantium cumque eveniet.
+    </div>
+
+</body>
+
+</html>
