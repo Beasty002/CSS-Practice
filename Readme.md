@@ -48,10 +48,10 @@
 
 ## Colors and Backgrounds
 
-- Color properties (color, background-color).
-- CSS gradients.
+- Color properties (color, background-color). ✅
+- CSS gradients.✅
 - Background properties (background-image, background-repeat, background-size, etc.).
-- Opacity and RGBA colors.
+- Opacity.
 
 ## Borders
 
