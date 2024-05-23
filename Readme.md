@@ -50,7 +50,7 @@
 
 - Color properties (color, background-color). ✅
 - CSS gradients.✅
-- Background properties (background-image, background-repeat, background-size, etc.).
+- Background properties (background-image, background-repeat, background-size, etc.).✅
 - Opacity.✅
 
 ## Borders
