@@ -27,6 +27,52 @@
             fixed = The background image will not scroll with the page
             local = The background image will scroll with the element's contents
             */
+            background-blend-mode: overlay;
+            /* This property defines the blending mode of each background layer (color or image) */
+            /* has the following property : normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity; */
+            background-clip: content-box;
+            /* This property defines how far the the background color or image should extend withthin the element 
+            Has the following the value :-
+            border-box:this is the default value where the background extends behind the border
+            padding-box : here the background extends to the inside of the border meaning till the border
+            content-box : the background only extends till the edge of the content
+            */
+            background-origin: padding-box;
+            /* This property defines the origin position of a background image 
+            has the following value:-
+            padding-box :-	Default value. The background image starts from the upper left corner of the padding edge	
+            border-box	:-The background image starts from the upper left corner of the border	
+            content-box	:- The background image starts from the upper left corner of the content
+            */
+            background-position-x: center;
+            /* this sets the position of background on x axis and has vaue left right and center and also numeric value in percentage where 0% is left and 100% is right and also value in position like 10px , rem or any unit from left*/
+            background-position-y: center;
+            /* this sets the position of background on y axis and has vaue top bottom and center and also numeric value in percentage where 0% is top and 100% is bottom and also value in position like 10px , rem or any unit from top*/
+            background-position: center center;
+            /* This is shorthand for background postion x and y so first value is of x direction and second is of y */
+            background-size: 30px 40px;
+            /* This specifies the size of the backgroud image 
+            this has value like :-
+            auto :- This is the default value where the background image is displayed in its original size
+            length :- here we define the width and the height directly where the first is the width and the second is the height eg :40px 40px 
+            percentage :- similar to length but here we use percentage that is set according to the parent element
+            cover :- resizes the background image to cover the entire container even if the image is streched or cut a bit
+            contain :- resizes the background size to make the image is fully visisble
+            */
+            background: url(https://i.pinimg.com/originals/f5/f2/74/f5f27448c036af645c27467c789ad759.gif) 10px 20px/50px 50px;
+            /* this is the shorthand for :- background-color
+            background-image
+            background-position
+            background-size
+            background-repeat
+            background-origin
+            background-clip
+            background-attachment 
+            value are inserted in format background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+            NOte :- If one of the properties in the shorthand declaration is the bg-size property, you must use a / (slash) to separate it from the bg-position property
+            If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.
+            */
+
 
         }
     </style>
