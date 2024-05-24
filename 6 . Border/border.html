@@ -22,6 +22,7 @@
             border-color: red;
             /* this sets the color of the border */
             border-style: dashed;
+            /*  Style is required for other propery to be applied since none is applied as default */
             /* this is used to style what type of border you would like 
             it has values like :-
             none	Default value. Specifies no border	
@@ -35,6 +36,63 @@
             inset :-	Specifies a 3D inset border. The effect depends on the border-color value	
             outset :-	Specifies a 3D outset border. The effect depends on the border-color val
             */
+        }
+
+        .div2 {
+            border-top: 4px solid coral;
+            /* this is the short hand for border width , style and color on top  side
+            like wise we have border bottom left and right*/
+            border: 4px solid red;
+            /* This is the short hand for border  width style and color on all four side*/
+        }
+
+        .div3 {
+            /* the border block property is similar to "border" property but is dependent on the block direction which is defined by the writing mode property this affects the start and end property default the block direction is downward */
+            border-block-start: 4px dashed red;
+            /* It is shorthand for this property border-block-start-width border-block-start-style border-block-sart-colo */
+
+            border-block-end: 6px solid black;
+            /* It is shorthand for this property border-block-end-width border-block-end-style border-block-end-colo */
+        }
+
+        .div4 {
+
+            border-block: 10px dotted violet;
+            /* border-block-width border-block-style border-block-color */
+        }
+
+        .div5 {
+            border-bottom-left-radius: 40px;
+            /* this sets the radius of the border in the bottom left part and other values are bottom right , top left and top right */
+        }
+
+        .div6 {
+            border-radius: 40px;
+            /* this sets the radius in all direction */
+        }
+
+        .div7 {
+            font-size: 56px;
+            font-family: arial;
+            border-width: 10px;
+            border-style: double;
+            border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSq1xs7HFukwKWtCd5zdZNSwMl1pRT4iMIATb82G5Kkg&s) 25% round;
+            /* This is short hand for :- 
+            border-image-source : we specify the path of the image
+            border-image-slice :  property specifies how to slice the image specified by border-image-source. The image is always sliced into nine sections: four corners, four edges and the middle. and has the foloowing value "number	The number(s) represent pixels for raster images or coordinates for vector images	
+            %	Percentages are relative to the height or width of the image	
+            fill	Causes the middle part of the image to be displayed"
+
+            border-image-width :  property specifies the width of the border image.
+            border-image-outset : this  property specifies the amount by which the border image area extends beyond the border box. and can take value in any unit.
+            border-image-repeat :- this property specifies whehther the border image should be repeated rounded spaced or streched
+            */
+            /* Note :- we need to specify the border width and the style for border image to work */
+        }
+
+        .div8 {
+            border-inline: 4px solid red;
+            /* this property is similar to the border-block property but it is dependent on inline direction and by default it is left to right*/
         }
     </style>
 </head>
