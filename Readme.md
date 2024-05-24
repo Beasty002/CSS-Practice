@@ -1,4 +1,4 @@
-# Start of learing more about Vanilla CSS
+# Start of learing more about Vanilla CSS and frame works
 
 ## Table of Contents
 
@@ -55,9 +55,9 @@
 
 ## Borders
 
-- Border properties (width, style, color).
-- Border-radius for rounded corners.
-- Border-image for using images as borders.
+- Border properties (width, style, color).✅
+- Border-radius for rounded corners.✅
+- Border-image for using images as borders.✅
 
 ## Transformations and Transitions
 
