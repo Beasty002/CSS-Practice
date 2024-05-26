@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transoformation</title>
     <style>
+        /* the trasnform propoery is used to apply 2d and 3d tranformation to the element
+        its main value include matrix,translate,scale,rotate screw and perspective */
         div {
             height: 200px;
             width: 200px;
             margin-bottom: 20px;
+        }
+
+        .div1 {
+            background-color: red;
+            transform: rotate(20deg);
+        }
+
+        .div2 {
+            background-color: pink;
+            transform: skewY(20deg);
+        }
+
+        .div3 {
+            background-color: black;
+            transform: scaleX(1.5);
         }
     </style>
 </head>
