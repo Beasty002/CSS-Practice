@@ -14,6 +14,9 @@
 
         /* the trasnform propoery is used to apply 2d and 3d tranformation to the element
         its main value include matrix,translate,scale,rotate screw and perspective */
+        /* the transform property on css is only the visual presentation and doesnot impact the document flow
+        This means that when you apply transformations like scale, rotate, skew, or translate, the transformed element does not take up more space or push other elements around it. Instead, it visually alters the appearance of the element without changing its actual position or size in the layout.
+        */
         div {
             height: 200px;
             width: 200px;
@@ -25,6 +28,7 @@
             transform: rotate(20deg);
             /* this rotates the element in the given value provided and we use degree to denote the value */
             /* if the value is positive then it denotes the rotation in clockwise direction if in negative then in counter clockwise */
+            /* Also multilple transformation doesnt't work meaning the later one will overwrite the previous one so use all needed in one tranform */
         }
 
         .div2 {
@@ -58,6 +62,14 @@
             /* this is the shortform as matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) 
             or matrix(a , b , c , d , tx , ty) */
             /* we use no unit in this form */
+        }
+
+        .div5 {
+            background-color: aqua;
+            transform: rotate(40deg) scale(2);
+            position: absolute;
+            bottom: 200px;
+            left: 900px;
         }
     </style>
 </head>
