@@ -60,7 +60,7 @@
 - Border-image for using images as borders.✅
 
 ## Transformations and Transitions
-- Transform properties (rotate, scale, skew, translate).
+- Transform properties (rotate, scale, skew, translate). 
 - Transition properties (transition-property, transition-duration, transition-timing-function, transition-delay).
 
 ## Animations
@@ -73,6 +73,7 @@
 
 - CSS filter effects (blur, brightness, contrast, grayscale, etc.).
 - Blend modes for combining elements' colors.
+- Object fit
 
 ## Responsive Design
 
