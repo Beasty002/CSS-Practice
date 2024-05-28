@@ -42,6 +42,7 @@
             background-color: red;
             translate: 50px 0;
             /* this moves the div 50px to the x directin i.e left to right 50px and 0px in y direction i.e 0px from top to bottom */
+            /* the value should be written either in x,y direction or in x,y,z */
         }
 
         .c3 {
@@ -66,6 +67,8 @@
             positive value move the element closer to the viewer and the negative value moves the element away from the viewer 
             here the 500px represents the element being 500px forward but no changes can be seen unless the parents has some perspective value set
             */
+            /* short form  transform: perspective(1000px) translateX(0) translateY(60%) translateZ(500px);
+*/
         }
     </style>
 </head>
