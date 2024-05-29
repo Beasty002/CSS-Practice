@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 400px;
+            width: 400px;
+            background-color: hotpink;
+            position: relative;
+        }
+
+        .child {
+            background-color: lime;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            inset: 0px;
+            /* this is short form for top left right and bottom
+            if it has one value then it is for all 
+            if has two value then the first value is of top and bottom , and the second one is for left and right
+            if it has three value then the first value is for top , the second one for left and right , and the last value for bottom
+            */
+            margin: auto;
+            /* The parent container is assumed to be a certain size.
+            The .child element has fixed dimensions (200px x 200px).
+            inset: 0 stretches the .child to fill the parent.
+            margin: auto then balances the extra space on all sides equally,            
+            thus centering the .child element. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>
