@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transition allows us to change the value of an object over the duration  
+        it requires a triger to make the change visisble*/
+        .div1 {
+            background-color: coral;
+            height: 200px;
+            width: 200px;
+            transition-property: scale;
+            /* this defines what property we are trying to transition
+            'scale' is written since we have used it inside hover . we can also use the 'all' keyword which adds the transtion effect to all the changed property
+            */
+            transition-delay: .2s;
+            /* this defis after how much time to start the transitioning */
+            transition-duration: .5s;
+            /* this defines how much time to take the transitioning effect , it is not affected by delay , delay and it is different */
+            transition-timing-function: ease-out;
+            /* this defines the speed curve of the transition its value include:-
+            ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+            linear - specifies a transition effect with the same speed from start to end
+            ease-in - specifies a transition effect with a slow start
+            ease-out - specifies a transition effect with a slow end
+            ease-in-out - specifies a transition effect with a slow start and end
+            cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+            */
+            transition: scale .5s linear .8s;
+            /* this is the shorthand for property duration timing and delay */
+
+        }
+
+        .div1:hover {
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+
+</body>
+
+</html>
