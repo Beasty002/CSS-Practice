@@ -1,14 +1,14 @@
-# Start of learing more about Vanilla CSS and frame works
+# Vanilla CSS and its Frameworks
 
 ## Table of Contents
 
-1. [Syntax, Selectors, Properties, and Values](#syntax-selectors-properties-and-values)
-2. [CSS Layout](#css-layout)
-3. [Typography](#typography)
-4. [Box Model](#box-model)
-5. [Colors and Backgrounds](#colors-and-backgrounds)
-6. [Borders](#borders)
-7. [Transformations and Transitions](#transformations-and-transitions)
+1. [Syntax, Selectors, Properties, and Values ✅](#syntax-selectors-properties-and-values)
+2. [CSS Layout ✅](#css-layout)
+3. [Typography ✅](#typography)
+4. [Box Model ✅](#box-model)
+5. [Colors and Backgrounds ✅](#colors-and-backgrounds)
+6. [Borders ✅](#borders)
+7. [Transformations and Transitions ✅](#transformations-and-transitions)
 8. [Animations](#animations)
 9. [Filters and Blending](#filters-and-blending)
 10. [Responsive Design](#responsive-design)
