@@ -61,7 +61,7 @@
 
 ## Transformations and Transitions
 - Transform properties (rotate, scale, skew, translate). ✅
-- Transition properties (transition-property, transition-duration, transition-timing-function, transition-delay).
+- Transition properties (transition-property, transition-duration, transition-timing-function, transition-delay).✅
 
 ## Animations
 
