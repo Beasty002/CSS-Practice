@@ -8,6 +8,10 @@
     <style>
         /* Animation allows element to gradually change from one style to another  */
         /* "@keyframes" are what allows us to add animation to change from one style to another  */
+        body {
+            perspective: 1000px;
+        }
+
         .div1 {
             position: relative;
             height: 100px;
@@ -88,16 +92,19 @@
 
         @keyframes rotate1 {
             0% {
-                transform: perspective(1000px) rotate(0deg 20deg 60deg);
+                transform: rotate(0deg) rotateY(0deg);
             }
 
             50% {
-                transform: perspective(1000px) rotate(180deg);
+                transform: rotate(180deg) rotateY(180deg);
             }
 
             0% {
-                transform: perspective(1000px) rotate(360deg);
+                transform: rotate(360deg) rotateY(360deg);
             }
+
+            /* we can use percentage like this if they have same function 0%,20%,30%,40%{
+property } we can add many as many as we like this will minimize the repetition*/
         }
     </style>
 </head>
