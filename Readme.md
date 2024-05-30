@@ -65,9 +65,9 @@
 
 ## Animations
 
-- Keyframes and animation properties.
-- Animation iteration and direction.
-- Animation timing functions.
+- Keyframes and animation properties. ✅
+- Animation iteration and direction. ✅
+- Animation timing functions. ✅
 
 ## Filters and Blending
 
