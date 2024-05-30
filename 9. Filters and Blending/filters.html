@@ -8,6 +8,7 @@
     <style>
         /* the filter property defines the visual effect (like blur and saturation to an element) often to an image */
         img {
+            border-radius: 0px 200px 0px 200px;
             filter: blur(4px);
             /* This adds a blur effect to the image. The larger the value, the more the image will be blurred. It doesn't take percentage values. */
 
@@ -37,6 +38,7 @@
 
             filter: sepia(80%);
             /* Applies a sepia filter to the image. 0% is the default (no sepia), and 100% fully applies the sepia effect. */
+
             filter: brightness(110%) contrast(120%) saturate(130%) hue-rotate(10deg) sepia(20%) drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 
             /* this way you can use all feature at once or else if you individually one would override the other */

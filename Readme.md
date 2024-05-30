@@ -71,8 +71,8 @@
 
 ## Filters and Blending
 
-- CSS filter effects (blur, brightness, contrast, grayscale, etc.).
-- Blend modes for combining elements' colors.
+- CSS filter effects (blur, brightness, contrast, grayscale, etc.).✅
+- Blend modes for combining elements' colors. 
 - Object fit
 
 ## Responsive Design
