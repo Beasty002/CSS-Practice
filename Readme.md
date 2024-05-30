@@ -9,7 +9,7 @@
 5. [Colors and Backgrounds ✅](#colors-and-backgrounds)
 6. [Borders ✅](#borders)
 7. [Transformations and Transitions ✅](#transformations-and-transitions)
-8. [Animations](#animations)
+8. [Animations ✅](#animations)
 9. [Filters and Blending](#filters-and-blending)
 10. [Responsive Design](#responsive-design)
 11. [Accessibility](#accessibility)
