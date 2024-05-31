@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .div1 {
+            background-color: gray;
+            padding: 20px;
+            /* we can use as many value as we want in the 'min' and 'max' */
+            width: min(600px, 50%);
+            /* with the min function the element will choose the smallest value between the two */
+            width: max(600px, 80%);
+            /* with the max function it will coose the one value that is larger */
+            /* we can also use value like '600px + 100% , 20vh + 40px' we can perform basic arthemetic operations like this  */
+            height: calc(600px - 02vh);
+            /* we can also use the calc function to calculate the value but inside min or max we can use directly */
+        }
+
+
+        p {
+            margin: 0;
+            padding: 0;
+            background-color: coral;
+            padding: 10px;
+            width: clamp(60px, 50%, 200px);
+            /* by using clamp the width would try attain 50% width , but can have max of 200px and min of 60px */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1 style="color: red;">
+            Hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, maxime similique molestiae deleniti eos
+            voluptatum dicta? Minima quia nobis consectetur expedita eaque facilis, ratione voluptatum voluptatibus,
+            facere molestias provident. Labore.</p>
+    </div>
+
+</body>
+
+</html>
