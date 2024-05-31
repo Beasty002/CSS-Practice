@@ -1,0 +1,15 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+The viewport meta tag is an HTML tag that controls the layout and scaling of a webpage on different devices, particularly mobile devices. It helps ensure that a webpage is displayed correctly and is user-friendly on smaller screens like smartphones and tablets.
+
+Common Attributes
+width: Controls the width of the viewport. You can set it to a specific value (like width=600) or use device-width to match the screen's width in device-independent pixels.
+initial-scale: Sets the initial zoom level when the page is first loaded by the browser.
+minimum-scale: Sets the minimum zoom level the user is allowed to zoom out to.
+maximum-scale: Sets the maximum zoom level the user is allowed to zoom in to.
+user-scalable: Controls whether the user can manually zoom in and out. Values are yes or no.
+width=device-width: This sets the width of the viewport to the width of the device. On a mobile device, the width will be the full width of the screen.
+initial-scale=1.0: This sets the initial zoom level to 1.0, meaning no zoom. The webpage will be displayed at its actual size.
+Why It's Important
+Responsive Design: Ensures that the webpage adapts to different screen sizes and orientations.
+User Experience: Prevents issues like horizontal scrolling and improperly scaled text/images on mobile devices.
+SEO: Search engines like Google prioritize mobile-friendly websites in their rankings, and the viewport meta tag is a key part of mobile optimization.
