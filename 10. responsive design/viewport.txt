@@ -1,4 +1,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
 The viewport meta tag is an HTML tag that controls the layout and scaling of a webpage on different devices, particularly mobile devices. It helps ensure that a webpage is displayed correctly and is user-friendly on smaller screens like smartphones and tablets.
 
 Common Attributes

@@ -77,13 +77,13 @@
 
 ## Responsive Design
 
-- Media queries for responsive layouts.
-- Viewport meta tag.
-- Mobile-first design principles.
+- Media queries for responsive layouts.✅
+- Viewport meta tag.✅
+- Mobile-first design principles.✅
 
 ## Accessibility
 
-- Semantic HTML and its impact on accessibility.
+- Semantic HTML and its impact on accessibility. 
 - ARIA roles and attributes.
 - Focus management and keyboard navigation.
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Check contrast properly */
+    </style>
+</head>
+
+<body>
+    <!-- Semantic HTML is very important to make the web page accessible
+    Do not use semantic tag for role it is not made for altough it may do the task
+    -->
+    <!-- use nav,header,footer,aside,figure and others ............... for their respective task -->
+    <a href="https://www.facebook.com" tabindex="3">Click me</a>
+    <!-- the anchor tag is click button , but it is not in button tag which makes the accessibility low for things like screen reader
+        instead use button , if the role is to go through a link then use the anchor tag but if the task is only some clickable taks that doesn't require going to a link use the button tag. 
+        if you used anchor tag for the task of the button the screen reader would still read it as a link
+    -->
+    <a href="https://www.facebook.com" role="button" tabindex="2">Click me</a>
+    <!-- if you really need to use the anchor tag then change the role to 'button' and tabindex to 0 , 
+    '-1' tabindex would mean that the element would be untabable meaning even it is button link or any input type the tab wouln't select it
+    and the tab index '0' means the first item to select on clicking tab and 1,2,3... would mean the order they would be selected on clicking tab
+    -->
+    <h1>Heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deleniti eaque? Cupiditate, praesentium
+    <h2>consequatur minus provident odit ad porro eum quisquam illo.</h2> Deserunt dignissimos culpa esse aut laudantium
+    neque labore?</p>
+    <!-- the above way of giving h2 for making the font bold is not a good way instead use custom css or strong tag like below
+    the heading tag defines the title of a content so use it only for adding a headin.
+    -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deleniti eaque? Cupiditate, praesentium
+        <strong>consequatur minus provident odit ad porro eum quisquam illo.</strong> Deserunt dignissimos culpa esse
+        aut laudantium
+        neque labore?
+    </p>
+    <p style="color: gray;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ipsum aliquid fugit
+        accusamus pariatur aut. Nam consequatur voluptas quidem expedita enim voluptate, cupiditate sit molestias
+        tempora minima recusandae, illum deserunt?</p>
+    <!-- the above p tag , contains some text which has color set to gray and our body has background color white , we might see the text easily but not all people can do that so we need to take in mind the color contrast (how one color stands out from another) 
+        for people with low visisbility this might be a problem so we need better color contrast ratio, 
+         you can check the color cotrast through the inspect too click the element you want to check than click it's color property and ther you would see 'color contrast ' with some values , and there is rating to if you do the drop down , there you would see double and triple A , which denotes how is you color contrast ration . Double is acceptable and Tripple A is very goo ratio.
+         SO make the color contrast ration good
+        -->
+    <!-- Maintain the page heiarchy properly 
+    one good way is to check is blur the entire page then see if the titles are some what seeable or not another way is the grayscale to see if the heiarchy is still looking better or not
+        It is better to use only one h1 tag in a page
+    -->
+    <!--  by clicking on inspect and if you click "lighthouse " which is on right of console you can check how accessible is your website from there -->
+
+</body>
+
+</html>
