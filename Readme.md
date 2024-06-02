@@ -83,9 +83,9 @@
 
 ## Accessibility
 
-- Semantic HTML and its impact on accessibility. 
-- ARIA roles and attributes.
-- Focus management and keyboard navigation.
+- Semantic HTML and its impact on accessibility. ✅
+- ARIA roles and attributes. 
+- Focus management and keyboard navigation. 
 
 ## CSS Preprocessors and Postprocessors
 
