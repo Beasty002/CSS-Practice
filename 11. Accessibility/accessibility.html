@@ -50,6 +50,22 @@
         It is better to use only one h1 tag in a page
     -->
     <!--  by clicking on inspect and if you click "lighthouse " which is on right of console you can check how accessible is your website from there -->
+    <form action="
+">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <!-- The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+    
+    The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button or checkbox.
+        
+        The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together -->
+
+        <label for="number">Number <span class="mandatory">*</span>
+        </label>
+        <input type="text" id="number" required aria-required="true">
+        <!-- for ilabel containing the '*' or required which means that the field is required . It is recommended to use required and aria-required="true" to the form control if you use an asterisk (*): -->
+    </form>
+
 
 </body>
 
