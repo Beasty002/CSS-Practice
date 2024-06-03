@@ -21,6 +21,7 @@
         if you used anchor tag for the task of the button the screen reader would still read it as a link
     -->
     <a href="https://www.facebook.com" role="button" tabindex="2">Click me</a>
+    <!-- ARIA rules helps us to tell what the element is actually whether it is a button, article ,checkbox, textbox, option, navigation or others -->
     <!-- if you really need to use the anchor tag then change the role to 'button' and tabindex to 0 , 
     '-1' tabindex would mean that the element would be untabable meaning even it is button link or any input type the tab wouln't select it
     and the tab index '0' means the first item to select on clicking tab and 1,2,3... would mean the order they would be selected on clicking tab

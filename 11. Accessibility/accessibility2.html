@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- the tab index helps us go through the page using the tab whete the tabindex denotes in which order the focus goes through the one with -1
+    is never went through and the page starts with tabindex 0 and goes in increasing order -->
+    <div>
+        <h1>Focus order</h1>
+        <p tabindex="0">Focus goes here 4th</p>
+        <p tabindex="2">Focus goes here 2nd</p>
+        <p tabindex="1">Focus goes here 1st</p>
+        <p tabindex="-1">Focus never goes here</p>
+        <p tabindex="1">Focus goes here 3rd</p>
+        <p tabindex="0">Focus goes here 5th</p>
+    </div>
+
+</body>
+
+</html>
