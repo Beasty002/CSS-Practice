@@ -2,8 +2,10 @@ $ss : red;
 
 .heading {
     color: $ss;
+    // this is converted to color red directly in the style.css
     display: flex;
     justify-content: center;
     text-decoration-skip-ink: auto;
+    //all the css that we do here will be converted to normal css over to style.css along with that it will alos convert the propery to webkit for those that do not support the property
 
 }
