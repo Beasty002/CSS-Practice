@@ -1,0 +1,7 @@
+.heading {
+  color: red;
+  display: flex;
+  justify-content: center;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}/*# sourceMappingURL=style.css.map */
