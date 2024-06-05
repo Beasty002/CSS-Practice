@@ -1,0 +1,39 @@
+// name the file that you want to import starting with underscore '_';
+@mixin flexcentrevar($direction) {
+    // we can use parameter by defining as variable and passing it through the part where it call this function
+    height: 100dvh;
+    display: flex;
+    flex-direction: $direction;
+    // we used the defined variable here
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    color: $primaryColor2;
+    text-decoration-skip-ink: auto;
+    @include flexcentrevar(column);
+    // this sends the parameter column to the flexcentrevar which would make $direction  have value column. 
+    // we can pass as many column as we like but it should be defined in the function
+    // this is very helpful for condition where we want to use some repeated property and only a tiny portion may differ 
+    // for example in this condition we wanted to centre a item in the div but some may need in row and some in column so with parameter we can pass the direction we need row or column
+
+
+    button {
+        background-color: $primaryBackground;
+        cursor: pointer;
+
+        &:hover {
+
+            background-color: black;
+        }
+
+        &::after {
+            content: 'again';
+            position: absolute;
+
+        }
+    }
+
+}

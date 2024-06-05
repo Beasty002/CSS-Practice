@@ -1,7 +1,46 @@
-.heading {
-  color: red;
-  display: flex;
-  justify-content: center;
+nav {
+  color: orange;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+}
+nav button {
+  background-color: gray;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: black;
+}
+nav button::after {
+  content: "again";
+  position: absolute;
+}
+
+header, section {
+  height: 100dvh;
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  background-color: coral;
+}
+header button, section button {
+  background-color: gray;
+  cursor: pointer;
+  color: blue;
+}
+header button:hover, section button:hover {
+  background-color: red;
+}
+header button::after, section button::after {
+  content: "hello";
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */

@@ -1,11 +1,62 @@
-$ss : red;
+$primaryColor : red;
+$primaryColor2 : orange;
+// here we created the variable
+// the dollar sign '$' represents the variable 
+// we can give any name to the variable
+$primaryColor : green;
+$primaryBackground : gray;
+@import './heading2';
+// this imports the scss from heading2
+@import './variables';
+// Note 'don't forget the semi column
+// we can also import variables only
+// better to import at top
 
-.heading {
-    color: $ss;
-    // this is converted to color red directly in the style.css
+@mixin flexcenter {
+    // this is used to define some function that we may repeatedly use @mixin denotes the making of function and 'flexcenter' is the name that can be anything
+    // we can add any property here
+    // even if we define this in other files we can use it by importing it using '@import'
     display: flex;
     justify-content: center;
-    text-decoration-skip-ink: auto;
-    //all the css that we do here will be converted to normal css over to style.css along with that it will alos convert the propery to webkit for those that do not support the property
+    align-items: center;
+    flex-direction: column;
+}
 
+header {
+    height: 100dvh;
+    color: $primaryColor;
+    // we can call on the variable that we defined previously to any of the property (unless the value of the propery is valid)
+    // this is converted to color red directly in the style.css
+    @include flexcenter();
+    // 
+
+    text-decoration-skip-ink: auto;
+    background-color: $secBGC;
+
+    //all the css that we do here will be converted to normal css over to style.css along with that it will alos convert the propery to webkit for those that do not support the property
+    button {
+        // SCSS allows us for nesting too , here the button insider the header is selected and in style.css it is converted into 'heading button{property that we defined below} '
+        // we can nest element as many as we like
+        background-color: $primaryBackground;
+        cursor: pointer;
+        color: $textColor;
+
+        &:hover {
+            // the and is used to define the element it is defined in , in this case the '&' deontes button and it is converted into 'header button:hover'} 
+            // like this we can use any pseudo property
+            background-color: red;
+        }
+
+        &::after {
+            content: 'hello';
+            position: absolute;
+
+        }
+    }
+
+
+}
+
+section {
+    @extend header;
 }
