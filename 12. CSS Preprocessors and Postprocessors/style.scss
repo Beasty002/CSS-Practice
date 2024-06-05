@@ -5,6 +5,8 @@ $primaryColor2 : orange;
 // we can give any name to the variable
 $primaryColor : green;
 $primaryBackground : gray;
+$width : 100vh - 20%;
+// we can do basic calculation line plus,minus,divide and multiplication in the variable 
 @import './heading2';
 // this imports the scss from heading2
 @import './variables';
@@ -59,4 +61,6 @@ header {
 
 section {
     @extend header;
+    // the '@extend' allows us to to use the property that we defined in an element before
+    // here tall the property or style we defined in the header would be copied to the section
 }
