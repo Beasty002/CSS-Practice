@@ -1,0 +1,35 @@
+SASS is a style sheet language that is compiled to css . Here we are allowed
+to use vairable nested rules , mixin functions, pass parameter and so on.
+all are fully compatible CSS .
+It Promotes DRY(Dont repeat yourself).
+
+Sass and SCSS are both syntaxes of the Sass (Syntactically Awesome Style Sheets) preprocessor, but they are not exactly the same.
+
+**Sass (Syntactically Awesome Style Sheets):
+
+        Sass uses indentation to separate code blocks and omits the use of semicolons and curly braces.
+        It has a more concise syntax.
+        eg:-
+        .nav
+          width: 100%
+          ul
+            margin: 0
+            padding: 0
+            list-style: none
+
+
+**SCSS (Sassy CSS):
+
+        SCSS uses the CSS-like syntax with curly braces and semicolons.
+        It is more familiar to users who are accustomed to traditional CSS.
+        .nav {
+            width: 100%;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                 }
+            }
+
+
+indentation is the spaces or tabs to visually separate blocks of code

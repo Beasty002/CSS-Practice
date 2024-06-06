@@ -15,7 +15,7 @@ nav {
     text-decoration-skip-ink: auto;
     @include flexcentrevar(column);
     // this sends the parameter column to the flexcentrevar which would make $direction  have value column. 
-    // we can pass as many column as we like but it should be defined in the function
+    // we can pass as many column as we like but it should be as defined in the function's parameter
     // this is very helpful for condition where we want to use some repeated property and only a tiny portion may differ 
     // for example in this condition we wanted to centre a item in the div but some may need in row and some in column so with parameter we can pass the direction we need row or column
 
