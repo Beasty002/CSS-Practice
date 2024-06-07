@@ -10,10 +10,10 @@
 6. [Borders ✅](#borders)
 7. [Transformations and Transitions ✅](#transformations-and-transitions)
 8. [Animations ✅](#animations)
-9. [Filters and Blending](#filters-and-blending)
-10. [Responsive Design](#responsive-design)
-11. [Accessibility](#accessibility)
-12. [CSS Preprocessors and Postprocessors](#css-preprocessors-and-postprocessors)
+9. [Filters and Blending ✅](#filters-and-blending)
+10. [Responsive Design ✅](#responsive-design)
+11. [Accessibility ✅](#accessibility)
+12. [CSS Preprocessors ✅ and Postprocessors](#css-preprocessors-and-postprocessors)
 13. [CSS Frameworks](#css-frameworks)
 14. [Browser Developer Tools](#browser-developer-tools)
 15. [Projects and Practice](#projects-and-practice)
@@ -89,7 +89,7 @@
 
 ## CSS Preprocessors and Postprocessors
 
-- Sass/SCSS or LESS for more efficient CSS authoring.
+- Sass/SCSS or LESS for more efficient CSS authoring. ✅
 - PostCSS for adding vendor prefixes and other enhancements.
 
 ## CSS Frameworks
