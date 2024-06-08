@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .personal-css-box {
+            background-color: aqua;
+            height: 100px;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        /* note :- we can nest a row and must use col inside the row
+         */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 gy-4 gx-5 gx-sm-2">
+            <!-- row-cols means how many column should there be in a row , here row-cols-1 means that by default there can only be one column in a row , however we have defined row-col with size like row-cols-sm-2 and others , this means whenever the size is 'sm i.e smaller' or greater thatn it make the number of columns 2 -->
+            <!-- any numeric value works for only row-cols but for sm,lg,etc it only works upto 6 for me -->
+            <!-- here gx means gap between the elemnts in x-direction i.e betweeen the column and gy is the gap in y direction that is between the rows they can take value upto 5 where 5 = 3rem , 4= 1.5rem , 3= 0.75rem , 2 = 0.5rem and 1 = 0.25rem 
+             we can also use 'g' only instead of 'gx' and 'gy' to denote gap in both direction 
+             we can also use break point or size here like in others ii.e sm,lg,xxl ......-->
+
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+            <div class="col">
+                <div class="personal-css-box"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
