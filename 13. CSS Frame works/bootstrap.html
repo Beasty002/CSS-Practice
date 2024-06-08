@@ -8,75 +8,64 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        .personal-css-box {
-            background-color: red;
+        body {
+            /* background-color: black; */
         }
+
+        /* bootstrap uses this following colors they are the class name too 
+        Primary: Blue (#0d6efd) - Used for primary actions and highlights.
+Secondary: Gray (#6c757d) - Used for secondary actions and less important highlights.
+Success: Green (#198754) - Indicates successful or positive actions.
+Danger: Red (#dc3545) - Indicates dangerous or potentially negative actions.
+Warning: Yellow/Orange (#ffc107) - Indicates caution or warning.
+Info: Teal (#0dcaf0) - Indicates informational actions or highlights.
+Light: Light Gray (#f8f9fa) - Used for light backgrounds or less prominent elements.
+Dark: Dark Gray/Black (#212529) - Used for dark backgrounds or prominent elements.
+White: White (#ffffff) - Used for white text or backgrounds.
+Black: Black (#000000) - Used for black text or backgrounds. */
     </style>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
-
-        <!-- container adds padding left and right -->
-        <!-- when we add more to the container like container-xl this will create a break point meaning every size after the xl size will behave the same -->
-        <!-- with fluid the container would be 100% every time -->
-        <div class="row row-gap-5 column-gap-1">
-            <!-- uses flex box to lay the container -->
-            <!-- bootstrap defines 12 column in a row meaning each row gets 1/12th of the entire size as default  -->
-            <!-- the row and column gap adds gap between the rows and columns respectively  -->
-            <div class="col">
-                <div class="personal-css-box">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
-                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
-                    illum in recusandae quia.
-                </div>
-            </div>
-            <div class="col-6 ">
-                <!-- since 12 column is defined in a row we can add how many column of the 12 column to take by the particular column -->
-                <!-- since we define col-6 this column would take 6 column worth of space -->
-                <div class="personal-css-box">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
-                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
-                    illum in recusandae quia.
-                </div>
-            </div>
-            <div class="col-2 ">
-                <div class="personal-css-box">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
-                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
-                    illum in recusandae quia.
-                </div>
-            </div>
-            <div class="col-2 ">
-                <div class="personal-css-box">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
-                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
-                    illum in recusandae quia.
-                </div>
-            </div>
-            <div class="col-4 col-lg-8">
-                <!-- col-lg-8 means whenever the width is large then take 8column width space for width greater or equal to it -->
-                <!-- This creates a break point -->
-                <div class="personal-css-box" style="background-color: rgb(0, 183, 255);">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
-                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
-                    illum in recusandae quia.
-                </div>
-            </div>
-            <div class="col-auto offset-2 ">
-                <!-- with auto the column would only take the size needed to fit its container -->
-                <!-- the offset 2 would make the column have margin left of about 2 colum width -->
-                <div class="personal-css-box">
-                    Hello
-                </div>
-            </div>
-        </div>
+    <div class="table-responsive ">
+        <!-- this would make the tabe responsive whenever we have many data to show , it does so by doing horizantal scroll -->
+        <!-- we can choose which screen size to make it resposive at using break points like lg,sm and so on.. eg table-responsive-lg this would make the table not resposive if the table's width is greater or equal to 'lg' -->
+        <table class="table table-info table-striped table-striped-columns table-hover table-bordered">
+            <!-- this 'table' class will automatically style our table for us -->
+            <!-- the table-info would make the color of the table to blue , we can use others too-->
+            <!-- table striped would make the color of each row differentiate between two colors and inf we use columns then it would differentiate between columns-->
+            <!-- with table hover it would give a darkish color to the table body while hovering -->
+            <!-- table borderder would give border to each cell in the table , if we want to remove all the border then we can do so using borderless instead of bordered -->
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <!-- this would add a dividing line above it -->
+                <tr class="table-primary">
+                    <!-- this would change this row of the table to bluish color -->
+                    <td>The</td>
+                    <td>Beasty</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td class="table-danger">John</td>
+                    <!-- we can also change the individual cell in the table -->
+                    <td>Doe</td>
+                    <td>21</td>
+                </tr>
+                <tr class="table-active">
+                    <td>John</td>
+                    <!-- table active would give the element the effect of hover all the time -->
+                    <td>Doe</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>
