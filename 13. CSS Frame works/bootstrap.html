@@ -21,9 +21,10 @@
         <!-- container adds padding left and right -->
         <!-- when we add more to the container like container-xl this will create a break point meaning every size after the xxl size will behave the same -->
         <!-- with fluid the container would be 100% every time -->
-        <div class="row">
+        <div class="row row-gap-5 column-gap-1">
             <!-- uses flex box to lay the container -->
             <!-- bootstrap defines 12 column in a row meaning each row gets 1/12th of the entire size as default  -->
+            <!-- the row and column gap adds gap between the rows and columns respectively  -->
             <div class="col">
                 <div class="personal-css-box">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
@@ -47,8 +48,25 @@
                     illum in recusandae quia.
                 </div>
             </div>
-            <div class="col-auto ">
+            <div class="col-2 ">
+                <div class="personal-css-box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
+                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
+                    illum in recusandae quia.
+                </div>
+            </div>
+            <div class="col-4 col-lg-8">
+                <!-- col-lg-8 means whenever the width is large then take 8column width space for width greater or equal to it -->
+                <!-- This creates a break point -->
+                <div class="personal-css-box" style="background-color: rgb(0, 183, 255);">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, et incidunt debitis nisi iste
+                    voluptates optio corporis, odit quibusdam esse inventore laboriosam veritatis cupiditate, tenetur at
+                    illum in recusandae quia.
+                </div>
+            </div>
+            <div class="col-auto offset-2 ">
                 <!-- with auto the column would only take the size needed to fit its container -->
+                <!-- the offset 2 would make the column have margin left of about 2 colum width -->
                 <div class="personal-css-box">
                     Hello
                 </div>
