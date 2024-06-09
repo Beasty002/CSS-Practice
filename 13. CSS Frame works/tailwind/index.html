@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <div class="container font-mono m-auto mb-10">
-        <h1 class="text-5xl pl-7 md:text-xl text-blue-800 hover:text-red-400">
+    <div class="container font-mono m-auto mb-10 mt-[200px] uppercase">
+        <!-- mt-[400px] this is the custom value for margin top -->
+        <h1 class="text-5xl pl-7 md:text-xl text-blue-800 hover:text-red-400 text-center">
             <!-- the text size changes to xl as soon as the screen size hits the breakboint md i.e 768px -->
             Hello
         </h1>
@@ -24,15 +25,19 @@
             0Hello
         </h1>
     </div>
-    <p class="text-opacity-50 font-bold slashed-zero tracking-widest">Lorem ipsum, dolor sit amet
+    <p class="text-opacity-50 font-bold slashed-zero tracking-widest truncate">Lorem ipsum, dolor sit amet
         consectetur
         adipisicing elit.
         Consequatur,
         sed?
     </p>
     <!-- text opacity dont know why but only works if we give the text some color -->
-    <ul class="list-decimal pl-5">
-        <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+    <ul class="list-decimal pl-5 list-inside truncate">
+        <li>Now this is a story all about how, my life got flipped-turned upside down Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Sequi officiis modi dolores quaerat, eveniet est totam aliquid et, quia
+            nostrum eos unde pariatur possimus. Esse quia rerum necessitatibus odit similique? Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Consectetur, natus. Labore aut, aspernatur, laborum aperiam fugit
+            obcaecati dolores dolorem dolore at odio doloribus provident eum quis impedit, nostrum quae optio?</li>
         <!-- ... -->
     </ul>
 </body>
