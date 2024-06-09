@@ -94,7 +94,7 @@
 
 ## CSS Frameworks
 
-- Bootstrap for rapid prototyping.
+- Bootstrap for rapid prototyping. ✅
 - Tailwind CSS for utility-first approach.
 - Foundation, Bulma, Materialize, etc.
 
