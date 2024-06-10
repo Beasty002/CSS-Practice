@@ -4,72 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ID Card Management</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ID Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-color: rgb(234, 234, 234);
+            font-family: 'poppins';
+        }
+
+
+        .small-rounded-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .info-row {
+            color: #333;
+        }
+
+        table tr td {
+            padding: 4px 6px !important;
+        }
+
+        .card {
+            overflow: hidden;
+            border: none !important;
+            padding-bottom: 45px;
+        }
+
+        .position-absolute-svg {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .position-absolute-svg-down {
+            bottom: 0;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .tuki-logo {
+            width: 120px;
+            object-fit: contain;
+        }
+
+        .position-absolute-logo {
+            position: absolute;
+            top: 15px !important;
+            right: 10px !important;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://www.tukisoft.com.np/tuki-website/resources/photos/logo.png
+                " alt="" style="width: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Tables</a>
+                    </li>
 
-    @if(empty($idCards))
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-12 text-center">
-                @if(Auth::check())
-                <h1 class="mb-4">Welcome Admin</h1>
-                @endif
-                <a href="{{ route('idCard.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Add ID
-                    Cards</a>
+                </ul>
+                <button class="btn btn-outline-primary">Logout</button>
             </div>
         </div>
-    </div>
-    @else
+    </nav>
     <div class="container mt-5">
-        <div class="d-flex justify-content-between align-items-center">
-            <a href="{{ route('idCard.create') }}" class="btn btn-primary mb-4">
-                <i class="fas fa-plus"></i>
-            </a>
-
-            <form class="form-inline my-2 my-lg-0" action="{{ route('idCard.index') }}" method="GET">
-                <div class="input-group">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-                        name="search" value="{{ $search }}">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
 
         <div class="row">
-            @foreach ($idCards as $idCard)
-            <div class="col-md-4 mb-4">
-                <a href="{{route('idCard.show',['idCard'=>$idCard->id])}}" class="card-link">
-                    <div class="card">
-                        <img src="{{ asset('storage/' . $idCard->photo) }}" class="card-img-top img-fluid small-image"
-                            alt="User Photo">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">{{ $idCard->full_name }}</h5>
-                            <p class="card-text">
-                                <strong>Email:</strong> {{ $idCard->email }}<br>
-                                <strong>Address:</strong> {{ $idCard->address }}<br>
-                                <strong>Date of Birth:</strong> {{ $idCard->dob }}<br>
-                                <strong>Card Expiry Date:</strong> {{ $idCard->expiry_date }}<br>
-                                <strong>Position:</strong> {{ $idCard->position }}
-                            </p>
-                        </div>
-                    </div>
-                </a>
+            <div class="container-fluid  d-flex flex-row justify-content-between bg-light p-2 rounded">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> <button
+                        class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button class="btn btn-primary">+ Add</button>
             </div>
-            @endforeach
+        </div>
+        <br>
+
+        <div class="row gx-5 gy-4">
+
+            <div class="col">
+                <div class="card m-auto position-relative print-me" style="width: 400px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute-svg">
+                        <path fill="#12699b" fill-opacity="1"
+                            d="M0,256L120,224C240,192,480,128,720,85.3C960,43,1200,21,1320,10.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+                        </path>
+                    </svg>
+                    <div class="company-logo position-absolute-logo end-0 top-0">
+                        <img src="https://www.tukisoft.com.np/tuki-website/resources/photos/logo.png" alt=""
+                            class="tuki-logo">
+                    </div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4XR04cgYItp6-9injkz5osegQh9aM_nuXA&s"
+                        alt="" class="small-rounded-image mt-5">
+
+                    <!-- All card text content are here------------------------------------------------------------------------------------->
+                    <div class="card-body text-center mt-0 py-0">
+                        <!-- Card holder name and postion------------------------------------------------------------------------------------->
+                        <h5 class="card-title fs-3 fw-bold">Monkey D Luffy</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">Captain of Strawhat Pirates</h6>
+                        <div class="card-text px-4 mt-4">
+                            <!-- Card holder other details------------------------------------------------------------------------------------->
+                            <table class="table table-borderless fw-medium">
+                                <tr>
+                                    <td class="text-start" style="width: 105px">Email</td>
+                                    <td>:</td>
+                                    <td class="text-start">Johndoe@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Address</td>
+                                    <td>:</td>
+                                    <td class="text-start">Pokhara-2 , Miruwa</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">DOB</td>
+                                    <td>:</td>
+                                    <td class="text-start">2000/03/20</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Expiry Date</td>
+                                    <td>:</td>
+                                    <td class="text-start">2030/12/30</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- other things are below------------------------------------------------------------------------------------------ -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute-svg-down">
+                        <path fill="#1ab189" fill-opacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-auto position-relative print-me" style="width: 400px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute-svg">
+                        <path fill="#12699b" fill-opacity="1"
+                            d="M0,256L120,224C240,192,480,128,720,85.3C960,43,1200,21,1320,10.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+                        </path>
+                    </svg>
+                    <div class="company-logo position-absolute-logo end-0 top-0">
+                        <img src="https://www.tukisoft.com.np/tuki-website/resources/photos/logo.png" alt=""
+                            class="tuki-logo">
+                    </div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4XR04cgYItp6-9injkz5osegQh9aM_nuXA&s"
+                        alt="" class="small-rounded-image mt-5">
+
+                    <!-- All card text content are here------------------------------------------------------------------------------------->
+                    <div class="card-body text-center mt-0 py-0">
+                        <!-- Card holder name and postion------------------------------------------------------------------------------------->
+                        <h5 class="card-title fs-3 fw-bold">Monkey D Luffy</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">Captain of Strawhat Pirates</h6>
+                        <div class="card-text px-4 mt-4">
+                            <!-- Card holder other details------------------------------------------------------------------------------------->
+                            <table class="table table-borderless fw-medium">
+                                <tr>
+                                    <td class="text-start" style="width: 105px">Email</td>
+                                    <td>:</td>
+                                    <td class="text-start">Johndoe@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Address</td>
+                                    <td>:</td>
+                                    <td class="text-start">Pokhara-2 , Miruwa</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">DOB</td>
+                                    <td>:</td>
+                                    <td class="text-start">2000/03/20</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Expiry Date</td>
+                                    <td>:</td>
+                                    <td class="text-start">2030/12/30</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- other things are below------------------------------------------------------------------------------------------ -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute-svg-down">
+                        <path fill="#1ab189" fill-opacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path>
+                    </svg>
+
+                </div>
+            </div>
+
+
+
         </div>
     </div>
-    @endif
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
