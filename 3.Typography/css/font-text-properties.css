@@ -1,0 +1,79 @@
+p {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    /*Used to set the type of font to use ,  the first font family provided is added to the text but in absence of the font fammily the next in the line is applied */
+    font-size: xx-large;
+    /* Used to define the text's size , we can use units with value or small,large,medium ..... which are set according to the browsers default size for those term*/
+    font-style: oblique;
+    /*This is used to define how the text is slanted values are normal , italic and oblique    
+    itallic and oblique may seem same but oblique is slightly more slanted than itallic*/
+    font-variant: small-caps;
+    /*Defines which glyph(representaion) to use for each letter. values are normal and "small-caps" which sets the all the letter to be capital where the first lettle is bigger than the others*/
+    font-weight: bold;
+    /* This defines the weight or (boldness/lightness) of the text*/
+    letter-spacing: 2px;
+    /*This defines the space between the letters*/
+    line-height: 30px;
+    /* This defines the height of the line of text */
+    text-align: left;
+    /* Defines which side the text should be aligned to*/
+    text-decoration: line-through;
+    /* Defines how the text is decorated*/
+    text-indent: 40px;
+    /* this applies the indentation or the white space to the text's first line*/
+    text-shadow: 4px 2px 2px red;
+    /*This adds the shadow to the text wherw:- 
+    the first is the horizontal offset(position in x-direction)
+    the second is the vertical offset(position in y-direction)
+    the third is the blur of the shadow and the last is the color
+    here we can also use only vertical and horizantal off set or both with color
+    */
+
+}
+
+p {
+    margin: auto;
+    width: 400px;
+    text-overflow: ellipsis;
+}
+
+div {
+    font: italic normal bolder 30px / 40px 'Sans seriff';
+    /* Shorthand property for font-style / font-variant / font-weight /font-size / line-height / font-family
+    Note :- don't forget the slash('/') sign between the font size and line height */
+    color: blue;
+    /*Sets the color of the text*/
+    margin: 40px 0px;
+    text-shadow: none;
+
+    text-transform: lowercase;
+    /*this transforms all text into the value defined . we have other values like uppercase which transforms all text into uppercase , then we have capitalize which transforms first letter into capital and other to lowercase*/
+    white-space: initial;
+    /* this defines how the white space inside an element is handled
+    values are :
+    normal : this is the default value 
+    norwrap : a single line of text not allowing to wrap
+    pre : after each line the text line is wrapped as written in the html , if all text on same line then no wrap meaning all text will be on one line
+    pre-line : same as "pre" but can wrap when needed  Text will wrap when necessary, and on line breaks.
+    pre-wrap : Whitespace is preserved by the browser. Text will wrap when necessary, and on line breaks ;
+    */
+    word-break: break-all;
+    /*The word with no space will break as soon as the end line is reached*/
+    word-spacing: 4px;
+    /*Space between the words*/
+}
+
+span {
+    margin: 40px 0px;
+    text-indent: 0px;
+    display: block;
+    white-space: nowrap;
+    /*nowrap this doesn't allow content to move to next line*/
+    width: 150px;
+    overflow: hidden;
+    /*THis hides the content that overflows from the element*/
+    text-overflow: ellipsis;
+    /*The overflowing content is replaced by ellipsis "..."
+    we can also use tht property clip which cuts the content , and we can add our custom value using double inverted comma by placing out custom property inside it eg:-  text-overflow: "-----" but this only works in firefox*/
+    border: 1px solid #000000;
+}

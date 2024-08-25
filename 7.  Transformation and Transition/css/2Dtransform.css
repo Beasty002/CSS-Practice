@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+/* the trasnform propoery is used to apply 2d and 3d tranformation to the element
+its main value include matrix,translate,scale,rotate screw and perspective */
+/* the transform property on css is only the visual presentation and doesnot impact the document flow
+This means that when you apply transformations like scale, rotate, skew, or translate, the transformed element does not take up more space or push other elements around it. Instead, it visually alters the appearance of the element without changing its actual position or size in the layout.
+*/
+div {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.div1 {
+    background-color: red;
+    transform: rotate(20deg);
+    /* this rotates the element in the given value provided and we use degree to denote the value */
+    /* if the value is positive then it denotes the rotation in clockwise direction if in negative then in counter clockwise */
+    /* Also multilple transformation doesnt't work meaning the later one will overwrite the previous one so use all needed in one tranform */
+}
+
+.div2 {
+    background-color: pink;
+    transform: skewX(20deg);
+    transform: skewY(60deg);
+    /* This property is used to skew the element . This effect makes as thought the element is being pulled sideways or vertically causing it to slant 
+    In skewX() the top and the bottom edges remain horizantal , but the vertical sides slant
+    In skewY() the left and right edges stay vertical , but horizantal sides slant
+    the short form is             transform: skew(20deg, 60deg);
+    in skew() the first value is for 'skewx' and second for 'skewY' , but if only one value is provided the skew goes for 'skewx' only
+
+    */
+}
+
+.div3 {
+    background-color: black;
+    transform: scaleX(1.5);
+    transform: scaleY(5);
+    /* this property is used to increase or decrease the size of th eelement according to the parameter given i.e is the height and the width */
+    /* the scaleX() property increases or decreases the width of an element */
+    /* the scaleY() property increases or decreases the height of an element */
+    /* the shortform is transform: scale(1.5, 5); the first value represents the scalex and the other scaleY , if only one value is given in 
+    scale then it denotes the scaling is same for both height and the width
+    */
+}
+
+.div4 {
+    background-color: coral;
+    transform: matrix(-2, 0, 0, 1, 0, 0);
+    /* this is the shortform as matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) 
+    or matrix(a , b , c , d , tx , ty) */
+    /* we use no unit in this form */
+}
+
+.div5 {
+    background-color: aqua;
+    transform: rotate(40deg) scale(2);
+    position: absolute;
+    bottom: 200px;
+    left: 900px;
+}

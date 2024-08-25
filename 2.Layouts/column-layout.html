@@ -5,35 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coulumn Rule</title>
-    <style>
-        .container1 {
-            height: 400px;
-            column-count: 4;
-            /*Divides the child into the number of column present here , here the paragraph in ".container1" is divided into four column*/
-            column-width: 100px;
-            /*This specifes the width of the column this is overwritten by "column-count" so use one when the other is not specified , this property is flexible so when the think of it like minimum heigh when the coulumn couldn't provide the specified width the coulmn would collapse and merge with another*/
-            column-fill: auto;
-            /*When the heigh is specified in the container then the coulumn fill would help to specify how to fill the coulumn the "auto" would fill the coulmn until it reaches the specified heigh and the balance would fill all the cotianer with about same amount of content*/
-
-            columns: 100px 5;
-            /* This defines the minimum width for each coulumn and the maximum number of column */
-            column-gap: 100px;
-            /*Defines the gap/space between the column*/
-            column-rule-style: dashed;
-            /* This defines the how the dividing line between the coulumn would look like */
-            column-rule-width: 10px;
-            /* This defines the width of the dividing line between the coulumn */
-            column-rule-color: blue;
-            /* This defines the color of the dividing line between the coulumn */
-            column-rule: 1px solid red;
-            /*This is the short form for column rule style width and color*/
-        }
-
-        h1 {
-            column-span: all;
-            /*This defines how many column the specified child would span to , and value "all" is possible but not numeric value */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/column-layout.css">
 </head>
 
 <body>

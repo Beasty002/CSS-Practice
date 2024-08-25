@@ -1,0 +1,22 @@
+.parent {
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    position: relative;
+}
+
+.child {
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Here is how this works :-
+first the child is moved 50% from top which means 50% of parents height i.e 50/100*500 = 250px
+then it is moved 50% from left which means 50% of parents width i.e 50/100*500 = 250px
+after that it is moved -50% in x direction which means it is shifted to left in -50% which is 50% of its own height i.e 50/100*200 = 100px 
+same way it is moved -50% in y direction from bottom to top*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* in css box model we have :-
+        content : - consists of content like image , text , or other form of media content
+        padding : - the space around the content area withing the border of the element
+        border : - it surround the padding and the content and can be applied to any or all sides of the element 
+        margin :-  this is the white space around the border  */
+
+        * {
+            margin: 0;
+            /*By default the user agent style sheet applies some margin to all element */
+        }
+
+        p {
+            border: 6px solid black;
+            /*This creates a visible border around the element it is short form for border-width , border-style and border-color */
+            width: 190px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin: 40px;
+            /* margin defines the white space around the element i.e outside of the defined borderSSS*/
+            /*Margin is shortform for margin top right left and bottom
+            if we have two value in margin then the first is the (top and bottom) and the other is (left and right)
+            if only one value then it is for all direction
+            */
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding: 20px;
+            /* padding defines the white space inside the element i.e inside of the defined border */
+            /*padding is shortform for padding top right left and bottom
+            if we have two value in padding then the first is the (top and bottom) and the other is (left and right)
+            if only one value then it is for all direction
+            */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Here is the digram show casing the box model</h1>
+    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="" width="600">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officiis quod assumenda ex itaque sapiente illum
+        reprehenderit? Labore, accusantium qui perferendis dignissimos repellat impedit a cumque ea molestias sint
+        aliquam?</p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quam harum totam cum iure rerum aliquid pariatur
+        autem quasi odio voluptatum. Eius, ipsa. Cupiditate, neque! Eveniet molestias vero voluptas a!
+    </p>
+
+</body>
+
+</html>

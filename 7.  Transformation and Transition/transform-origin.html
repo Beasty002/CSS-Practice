@@ -5,64 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .parent {
-            background-color: coral;
-            display: flex;
-            padding: 80px;
-            gap: 80px;
-            perspective: 1000px;
-
-        }
-
-        .child {
-            background-color: red;
-            height: 200px;
-            width: 200px;
-            border-radius: 2px 100px 2px 100px;
-            transition: all 1s ease;
-
-        }
-
-        .child.c1:hover {
-            transform: rotate(360deg);
-            /* transform orgin can only be used if we have used transform property */
-            transform-origin: 30px 20px;
-            /* the first value represents the horizantal or the x axis and the second would defint the vertical or the y axis 
-            we can also use the percentage
-            0% 0% would be top left 
-            0% 100% would be top right
-            100% 0% would be bottom left
-            100% 100% would be bottom right
-            50% would denote centre
-            */
-            /* the value here would define the origin value for property like rotate to be based on */
-
-
-            /* this helps to define the location origin of the transform or the center point of the element
-            by default the centre of element is the transform origin */
-        }
-
-        .child.c2:hover {
-            transform-origin: top right;
-            /* this helps to define the location origin of the transform or the center point of the element*/
-            /* transform orgin can only be used if we have used transform property */
-            /* we can use value like bottom top centre left and right */
-            transform: rotate(360deg);
-            /* by default the element would rotate around the centre of the element , but now since we have defined the origin to top right now the element would rotate about its top right corner */
-
-            /* we can also use z axis which would take only value in unit i.e the em,rem,px and so on....
-            we can use it by adding a 3rd value to the list 
-            like 0% 0% 40%/
-            */
-        }
-
-        .c3:hover {
-            transform-origin: top left 600px;
-            transform: rotate(360deg) translateZ(400px);
-
-        }
-    </style>
+    <link rel="stylesheet" href="./css/transform-origin.css">
 </head>
 
 <body>

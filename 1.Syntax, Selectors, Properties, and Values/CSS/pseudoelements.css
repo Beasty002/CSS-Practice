@@ -1,0 +1,48 @@
+P::first-letter {
+    /*Selects the first letter inside the tag*/
+    color: red;
+}
+
+.newp::first-line {
+    /*Selects the first line inside the tag*/
+    background-color: gray;
+}
+
+.div1::before {
+    /*adds content before the content of the provided element*/
+    content: "I am from before";
+    color: red;
+    background-color: black;
+    padding: 10px;
+}
+
+.div2 {
+    margin-top: 40px;
+    position: relative;
+}
+
+.div2::after {
+    /*adds content after the content of the provided element*/
+    content: "";
+    color: red;
+    background-color: black;
+    width: 15ch;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 10px;
+    border-radius: 20px;
+}
+
+::marker {
+    /*applies css the the marker of the lists*/
+    color: red;
+}
+
+::selection {
+    /* applies the css when we drag and select the portion of the page  only can change outline , background , cursor and color*/
+    background-color: yellow;
+    color: red;
+    cursor: grab;
+    outline: 40px solid red;
+}

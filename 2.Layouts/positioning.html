@@ -5,77 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positioning</title>
-    <style>
-        body {
-            height: 10000px;
-        }
-
-        /* Static : this is the default postioning of the element where the element is in the normal flow */
-        div {
-            position: static;
-            background-color: red;
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-        }
-
-
-        /*All position except the static unlocks the property to use the top right left bottom property to be used and they dont break the layout*/
-
-        .div1 {
-            position: relative;
-            right: -400px;
-            /*moves -400px away from right*/
-            background-color: black;
-        }
-
-        /*Relative :  this property is relative to its initial position ,  similar to static but unlocks the top left bottom right
-        space is left for the element
-        it leaves a gap where it normally would have been*/
-        section {
-            position: relative;
-            padding: 41px;
-        }
-
-        .div2 {
-            display: inline-block;
-            position: static;
-            background-color: rgb(0, 255, 251);
-        }
-
-        .div3 {
-            display: inline-block;
-            background-color: pink;
-            position: absolute;
-            /*absolute changes makes the element out of the flow of the document meaning its position on the document won't affect the position of others*/
-            top: 0;
-            /*the position is relative to the parent element if it has position relative set or else it would be relative to the viewport or the document it does not leave gap int place where it normally would have*/
-        }
-
-        .div4 {
-            position: fixed;
-            /*fixed : it is positioned relative to the viewport so it always stays in the same place even if the page is scrolled it doesn't leave gap in the part it would have been located*/
-            background-color: green;
-        }
-
-        header {
-            position: relative;
-            height: 600px;
-            /* display: flex;
-            flex-direction: column;
-            justify-content: flex-end; */
-            border: 1px solid red;
-        }
-
-        .div5 {
-            position: sticky;
-            /*sticky :  it is positioned relative to the scroll position and it toggles between the relative and fixed  position */
-            background-color: rgb(8, 0, 255);
-            /* bottom: 40px; */
-            top: 40px;
-            /*it behaves as fixed position as soon as the top of its parent reaches the value defined in the top property i.e 40px here then after scrolling through and when the parent is out of sight from the viewport it also vanishes along with it*/
-        }
-    </style>
+    <link rel="stylesheet" href="./css/positioning.css">
 </head>
 
 <body>

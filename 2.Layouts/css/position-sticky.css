@@ -1,0 +1,72 @@
+.container {
+    position: relative;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+.items {
+    position: sticky;
+    border: solid 4px red;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.seccom-items {
+    height: 70px;
+    border: solid 1px gray;
+}
+
+.item1 {
+    top: 0px;
+    /* z-index: 10; */
+}
+
+.item2 {
+    top: 70px;
+    /* z-index: 9; */
+}
+
+.item3 {
+    top: 140px;
+    /* z-index: 8; */
+}
+
+.item4 {
+    top: 210px;
+    /* z-index: 7; */
+}
+
+.item5 {
+    top: 280px;
+    /* z-index: 6; */
+}
+
+.item6 {
+    top: 350px;
+    /* z-index: 5; */
+}
+
+.item7 {
+    top: 420px;
+    /* z-index: 4; */
+}
+
+.item8 {
+    top: 490px;
+    /* z-index: 3; */
+}
+
+.item9 {
+    top: 560px;
+    /* z-index: 2; */
+}
+
+.item10 {
+    top: 630px;
+    /* z-index: 1; */
+}
+
+.item11 {
+    top: 700px;
+    /* z-index: 0; */
+}

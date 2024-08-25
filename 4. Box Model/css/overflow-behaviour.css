@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* try scrolling over both the orange and pink div one by one to see the difference */
+        main {
+            background-color: aqua;
+
+        }
+
+        section {
+            display: flex;
+            gap: 40px;
+            border: solid 1px black;
+            margin-bottom: 40px;
+        }
+
+        div {
+            overflow: auto;
+            height: 100px;
+            border: solid 1px red;
+        }
+
+        .no-chaining {
+            background-color: pink;
+            overscroll-behavior-x: contain;
+            /* overscroll behaviour in x direction */
+            overscroll-behavior-y: contain;
+            /* overscroll behaviour in y direction */
+            overscroll-behavior: contain;
+            /*it is short form for overflow x and y 
+            the overscroll-behavior property is used to turn off the scroll chainng (when we overscroll a content boundary and end up scrolling in the parent boundary) or overscroll affordance on an element when we try to scroll past the boundary */
+            /* Allows overscroll affordance behavior, but not scroll chaining. */
+            /*'auto' :- Does not allow overscroll affordance or scroll chaining behavior.
+ */
+
+
+
+        }
+
+        .chaining {
+            overscroll-behavior: auto;
+            /* Allows scroll chaining and overscroll affordance behavior. This is default */
+            background-color: orange;
+        }
+
+        .div1,
+        .div2 {
+            display: inline;
+            border: 10px solid red;
+            height: 100px;
+            width: 100px;
+            aspect-ratio: 1;
+            overflow: auto;
+            writing-mode: vertical-rl;
+            /* With the writing-mode property value of a  element set to 'vertical-rl', the block direction is in the x-direction, and so the overscroll-behavior-block now works in the x-direction instead of the y-direction: */
+            overscroll-behavior-block: contain;
+            /* Turn off scroll chaining for a scrollable  element in the block direction*/
+            overscroll-behavior-inline: contain;
+            /* Turn off scroll chaining for a scrollable  element in the inline direction*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="no-chaining">
+                <h1>NO chaining</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio, esse cumque laborum harum labore
+                quod eaque doloremque, ab adipisci rerum. Adipisci recusandae amet numquam eum! Nostrum distinctio
+                deserunt facere?
+            </div>
+            <div class="chaining">
+                <h1>Chaining</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio, esse cumque laborum harum labore
+                quod eaque doloremque, ab adipisci rerum. Adipisci recusandae amet numquam eum! Nostrum distinctio
+                deserunt facere?
+            </div>
+        </section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit totam porro atque corporis temporibus
+            at voluptas aliquid architecto accusantium! Itaque repellendus corporis ipsam suscipit dignissimos, nisi
+            quibusdam! Accusantium similique quasi aspernatur at laborum in, officia nulla, quae molestias veniam
+            repellat sint enim ipsam nihil minima numquam cumque asperiores consectetur et nisi ipsum non labore saepe?
+            Possimus quidem vitae ipsam! Reiciendis nesciunt accusantium accusamus libero. Minus ipsum sequi, asperiores
+            reprehenderit atque quam distinctio rem aut iure quaerat ratione fugiat id, nemo, hic quod eos dolore nulla
+            ea molestias quidem dolor at eligendi! Ipsam optio doloremque perferendis vitae ea facilis, laboriosam
+            repudiandae quo! Autem vel, porro earum dolor unde quis laboriosam reiciendis maxime expedita veritatis
+            cumque error cum ut exercitationem dignissimos at fugit necessitatibus voluptas eaque illo magnam. Aut,
+            excepturi dignissimos modi repudiandae eius delectus est, ea voluptatem praesentium illo laudantium
+            voluptates itaque hic? Repellat animi quasi excepturi fugit consequatur odit, aspernatur accusantium autem
+            vel neque a similique tempore blanditiis veritatis! Alias atque excepturi, laborum officiis laboriosam
+            eligendi pariatur rem quaerat optio maxime enim vel recusandae eos aspernatur ipsam sunt dolores. Assumenda
+            soluta rerum tempore veritatis aliquid ad quas vitae, temporibus eaque. Fugiat harum iusto libero quisquam
+            dicta recusandae cumque ullam provident reiciendis, nihil officiis ducimus similique nemo, odio sunt. Fugiat
+            assumenda id, iste voluptate dicta obcaecati autem optio itaque in, officia facere odio velit eum minima!
+            Porro est perferendis mollitia. Maiores atque amet provident quisquam iusto cum, tempora alias sint
+            architecto autem eum. In hic autem velit commodi nam harum aperiam facere deleniti. Eos iusto aut a totam
+            nesciunt dignissimos odio vel velit laboriosam ipsa obcaecati doloremque fugit hic voluptate dolores est
+            tempore in, corporis delectus, quaerat aperiam. Velit expedita, sequi cum repellat aliquid rerum asperiores
+            dicta ea obcaecati delectus. Earum minus veniam cum voluptates temporibus unde aliquid quaerat explicabo
+            accusantium, nisi asperiores dicta nam ratione iste, iusto voluptatum, aliquam ex corporis. Itaque quaerat
+            fugiat quos neque eaque omnis eveniet nostrum perspiciatis. Tempora porro architecto hic reiciendis dolorum
+            voluptatibus facilis atque dolores fuga. Harum, similique neque. Ut sapiente, quibusdam animi fugiat magnam
+            voluptate odio dicta non voluptatum dolores modi officiis nobis. Cum doloremque sed fugit error possimus
+            aliquid consectetur, dolor beatae! Quos repellat est sit ipsa laboriosam nihil debitis rerum dignissimos,
+            sapiente vel eos, et explicabo id sed. Id, praesentium veritatis commodi vero error doloribus nobis.
+            Eligendi illo officia quo culpa, dolorum officiis saepe magni natus labore itaque iste iure assumenda sint
+            laborum incidunt tempora atque corporis alias doloremque nihil. Cum tenetur libero explicabo dolore
+            voluptatum tempore perferendis odit omnis exercitationem. Nihil ab necessitatibus iste temporibus illo
+            fugit, modi quae laborum reiciendis aspernatur officiis voluptates laudantium rerum ipsam pariatur, tempore,
+            itaque soluta id nobis iusto obcaecati? Vero est dolorem eum et fugiat suscipit eaque, fugit quibusdam
+            recusandae, consequatur commodi harum fuga veritatis, ea nostrum blanditiis rerum vel illum incidunt aperiam
+            inventore. Itaque, fuga ea totam corrupti reprehenderit illum odio minima iste aut adipisci, ullam amet,
+            laborum debitis quis quae magni? Aperiam incidunt, consequatur saepe suscipit nisi doloremque facere sit
+            tempora veritatis ipsa iusto quod numquam assumenda, quae at et quia repellat dolor. Distinctio rem dicta
+            quidem quos sequi dolor labore alias, natus excepturi quis vero, velit explicabo. Ex nihil, porro provident
+            vitae error quas adipisci illum aperiam culpa ut fugiat laboriosam quisquam, vero, nostrum odit totam iusto.
+            Placeat molestias nulla soluta optio in, voluptatem aspernatur non doloremque voluptas quaerat aliquam natus
+            pariatur error voluptatibus ut eaque eos, quam suscipit ratione, sequi fuga ullam. Optio placeat perferendis
+            suscipit neque in iste fugit aspernatur deleniti explicabo at minus quia, voluptate tempore repellat quas
+            autem non voluptatum, magnam earum. Sequi numquam aperiam nostrum quas odit quibusdam, in recusandae nulla
+            magni inventore illum quis doloribus modi. Corrupti, eius ratione facere et qui consequuntur. Provident
+            incidunt numquam, reiciendis quo soluta nobis officiis ut saepe unde doloremque quidem nam distinctio
+            doloribus corporis ad. Et molestias eos, incidunt explicabo fuga dignissimos libero repudiandae nobis
+            ducimus consectetur ipsam veniam hic numquam excepturi iure quos eius adipisci cumque exercitationem autem,
+            error architecto tempora. Iste dicta autem cupiditate obcaecati pariatur nihil, ea quidem porro earum
+            aliquid. Cupiditate accusamus incidunt quaerat voluptas ut rem vel qui dolorum reprehenderit maiores aliquid
+            earum debitis facilis corrupti provident veniam dolore labore repudiandae laborum saepe possimus at, dolorem
+            ab. Placeat praesentium laudantium sapiente quos tempore? Nesciunt, perspiciatis rem? Quas dolorum nam
+            magni, totam aperiam voluptas illum dolor sapiente, laudantium praesentium repellendus repudiandae odit esse
+            incidunt magnam? Illum quidem delectus nisi a dolor, non, ex animi quo architecto deleniti suscipit sequi
+            ratione repellat! Unde libero placeat hic enim, voluptatibus at nesciunt quaerat labore, magni iure
+            perspiciatis sit corporis nisi aspernatur maxime! Tempora ducimus totam et sint quo velit aperiam voluptatem
+            deserunt, ullam laudantium facilis accusantium error delectus esse minus cum, rem corrupti ipsam assumenda
+            rerum ea? Officiis, repellat! Quod odio similique nulla tempore perspiciatis, nostrum adipisci modi amet
+            minima at assumenda voluptatem quasi error eligendi obcaecati necessitatibus. Qui, nemo. Perferendis
+            voluptates itaque voluptate debitis. Asperiores, praesentium cupiditate nisi architecto repudiandae qui
+            rerum, cum quasi ex dignissimos nemo officia eius ipsam voluptate facere, eos iste ducimus. Id odio
+            laudantium ducimus assumenda, accusantium non illum? Nemo error commodi quis dolorem molestiae inventore
+            natus ipsa. Doloremque, maiores aliquam eveniet est voluptatibus amet alias facilis voluptatem minus
+            veritatis eius quod quas consequuntur sint consectetur possimus dolorum nobis qui ducimus consequatur
+            repellendus dolorem. Enim corrupti hic molestiae quaerat facilis, quod, dolor commodi laboriosam labore
+            debitis quidem magnam aliquam illo veniam. Adipisci numquam voluptatem quasi dolorem mollitia optio.
+            Pariatur quidem hic officia fugit ducimus? Tempore neque ut tempora magnam. Magnam quis ratione cum deleniti
+            delectus, sint similique provident maiores neque odio et, impedit, dicta voluptate officiis cupiditate
+            accusamus? Qui delectus temporibus laboriosam minima. Voluptas sequi voluptate cumque doloremque? Ducimus,
+            earum! Voluptatem vero fuga incidunt a? Excepturi enim distinctio sed! Aliquam reiciendis mollitia veritatis
+            nulla ex corrupti ipsam similique quis, perspiciatis ipsum vitae vel illum voluptatum, aperiam harum
+            adipisci expedita quod! Maiores consectetur eum numquam cumque, explicabo modi mollitia consequatur
+            assumenda facilis iure est, tenetur earum eveniet repellat blanditiis. Laborum nostrum labore ab! Et.</p>
+    </main>
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum odio libero, veniam ad at minus
+        voluptas nesciunt architecto aliquid cupiditate officiis dolor beatae non unde blanditiis distinctio, sequi
+        ullam?</div>
+    <div class="div2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatum quasi consequatur id,
+        neque laudantium. Corporis sunt rerum soluta quidem, quas hic distinctio totam voluptatem, eveniet excepturi
+        mollitia? Neque, esse!</div>
+
+</body>
+
+</html>

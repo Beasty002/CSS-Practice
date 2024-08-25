@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+    /* property sets whether the table borders should be collapsed into a single border or not by default it is set to seperate */
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}

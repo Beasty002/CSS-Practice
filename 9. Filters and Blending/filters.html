@@ -5,46 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* the filter property defines the visual effect (like blur and saturation to an element) often to an image */
-        img {
-            border-radius: 0px 200px 0px 200px;
-            filter: blur(4px);
-            /* This adds a blur effect to the image. The larger the value, the more the image will be blurred. It doesn't take percentage values. */
-
-            filter: grayscale(75%);
-            /* Converts the image to grayscale. 0% is the default and 100% turns it into complete gray. Negative values are not allowed. */
-
-            filter: brightness(50%);
-            /* Adjusts the brightness of the image. Values greater than 100% make the image brighter, values less than 100% make the image darker. */
-
-            filter: contrast(150%);
-            /* Adjusts the contrast of the image. Values greater than 100% increase contrast, while values less than 100% decrease contrast. */
-
-            filter: drop-shadow(10px 10px 5px gray);
-            /* Adds a drop shadow to the image. The first value is the horizontal offset, the second is the vertical offset, the third is the blur radius, and the fourth is the color of the shadow. */
-
-            filter: hue-rotate(90deg);
-            /* Rotates the hue of the image. The value is an angle (in degrees) that rotates the colors. 0deg is the default, and 360deg makes a full rotation. */
-
-            filter: invert(100%);
-            /* Inverts the colors of the image. 0% is the default (no inversion), and 100% inverts all colors. */
-
-            filter: opacity(50%);
-            /* Adjusts the opacity of the image. 0% makes the image completely transparent, and 100% is the default (fully opaque). */
-
-            filter: saturate(200%);
-            /* Adjusts the color saturation of the image. Values greater than 100% make colors more saturated, while values less than 100% make colors less saturated. */
-
-            filter: sepia(80%);
-            /* Applies a sepia filter to the image. 0% is the default (no sepia), and 100% fully applies the sepia effect. */
-
-            filter: brightness(110%) contrast(120%) saturate(130%) hue-rotate(10deg) sepia(20%) drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
-
-            /* this way you can use all feature at once or else if you individually one would override the other */
-
-        }
-    </style>
+    <link rel="stylesheet" href="./css/filters.css">
 </head>
 
 <body>

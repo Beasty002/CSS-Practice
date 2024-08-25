@@ -1,0 +1,38 @@
+    /* There are three types of gradient in css they are 
+        Linear Gradients (goes down/up/left/right/diagonally)
+        Radial Gradients (defined by their center)
+        Conic Gradients (rotated around a center point) */
+    /* Note : -  A gradient is considered an image in css so we use background image */
+    div {
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        margin-top: 200px;
+        margin-left: 200px;
+        padding: 100px;
+
+    }
+
+    .div1 {
+        /* background-image: linear-gradient(red, blue); */
+        /* we can use as many color we like  */
+        background-image: linear-gradient(to right, red 75%, blue);
+        /* the '%' indicate where the color is stopping at , here the red go will 75% then start transitioning to blue we can use any unit*/
+        /*We can also add the direction of the gradient, 'to right  indicates red going to left to right ,
+            other direction value are :-
+            to left , to right top and so on ............ 
+            Also we can use degree like '45deg'*/
+        background-image: repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px);
+        /*THis repeats the gradient*/
+    }
+
+    .div2 {
+        /*Radial acts like circle*/
+        background-image: radial-gradient(red 50%, blue);
+        /* Values are similar like linear*/
+    }
+
+    .div3 {
+        background: conic-gradient(red, orange, yellow, green, blue);
+        /* this adds grading from the circle as if filling a pie chart */
+    }

@@ -1,0 +1,77 @@
+  /*use height only when needed*/
+  .box {
+      background-color: yellow;
+      border: solid 1px red;
+  }
+
+  .fifty {
+      width: 50%;
+      /*percentage are relative to the parent if parent has 100px width then the width is 100/2 = 50px*/
+  }
+
+  .hundred {
+      width: 100px;
+      /*this is the absolute unit*/
+
+  }
+
+  .parent {
+      margin-top: 20px;
+      border: 1px pxsolid red;
+      width: 100px;
+  }
+
+  /*viewport = window size*/
+  .wviewport {
+      width: 50vw;
+      /*This is relative to the viewport width of your browser 50vw= 50% of the viewport width*/
+  }
+
+  .hviewport {
+      height: 40vh;
+      /*This is relative to the viewport height of your browser 10vh= 10% of the viewport height*/
+
+  }
+
+  /*Rem is relative to the fontsize of the root of the browser normally 1 rem = 16px
+Em is relative the the fontsize of the parent i.e fontsize of parent or element * em  */
+
+  /*em helps is scaling 
+both rem and em are good for making the size consistence through out the browser*/
+
+  .oneem {
+      font-size: 1em;
+  }
+
+  .twoem {
+      font-size: 2em;
+  }
+
+  .onrem {
+      font-size: 1rem;
+  }
+
+  .tworem {
+      font-size: 2rem;
+  }
+
+  .parent1 {
+      font-size: 30px;
+      /*NOw the em insder parent are size (em value) * 30px */
+  }
+
+  h1 {
+      border: solid black 2px;
+      width: 5ch;
+      /*ch =  widtht of the font character 0*/
+  }
+
+  h2 {
+      font-size: 15vmin;
+      /* 1vmin = 1vw or 1vh, whichever is smaller */
+  }
+
+  h3 {
+      font-size: 20vmax;
+      /* 1vmin = 1vw or 1vh, whichever is bigger */
+  }

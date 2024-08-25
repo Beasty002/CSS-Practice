@@ -1,0 +1,31 @@
+ /* see this only after seeing the transalte.html */
+ body {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 80px;
+     perspective: 1000px;
+     /* the perspective defines the distance betweenn the screen and our eyes
+    */
+ }
+
+ /* the trasnform propoery is used to apply 2d and 3d tranformation to the element
+its main value include matrix,translate,scale,rotate screw and perspective */
+ div {
+     height: 200px;
+     width: 200px;
+     margin-bottom: 20px;
+ }
+
+ .div1 {
+     background-color: red;
+     /* this rotates the element in the given value provided and we use degree to denote the value */
+     /* if the value is positive then it denotes the rotation in clockwise direction if in negative then in counter clockwise */
+     /* transform: rotateY(-20deg); */
+     transform: rotateX(0) rotateY(0deg) rotateZ(180deg);
+
+     /* here the rotate defines the rotaion in given plane like 
+    'rotateX' is rotation in YZ plane
+    'rotateY' is rotation in XZ plane
+    'rotateZ' is rotation in XY plane
+    */
+ }

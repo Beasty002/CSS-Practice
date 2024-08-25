@@ -5,64 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .parent {
-            background-color: red;
-            padding: 10px 80px;
-        }
-
-        .child {
-            /* Normal blend mode, default */
-            mix-blend-mode: normal;
-            /* This is the default behavior where no blending occurs. */
-
-            /* Multiple blend modes for various effects */
-            mix-blend-mode: multiply;
-            /* Multiplies the colors of the image with the background, resulting in darker colors. */
-
-            mix-blend-mode: screen;
-            /* The opposite of multiply. The colors are inverted, multiplied, and then inverted again, resulting in lighter colors. */
-
-            mix-blend-mode: overlay;
-            /* Combines multiply and screen blend modes. Dark parts become darker, and light parts become lighter. */
-
-            mix-blend-mode: darken;
-            /* Displays the darker of the colors from both the image and the background. */
-
-            mix-blend-mode: lighten;
-            /* Displays the lighter of the colors from both the image and the background. */
-
-            mix-blend-mode: color-dodge;
-            /* Brightens the image to reflect the background color. */
-
-            mix-blend-mode: color-burn;
-            /* Darkens the background to reflect the image color. */
-
-            mix-blend-mode: hard-light;
-            /* A combination of multiply and screen based on the background color. */
-
-            mix-blend-mode: soft-light;
-            /* A softer version of hard-light. */
-
-            mix-blend-mode: difference;
-            /* Subtracts the darker color from the lighter color. */
-
-            mix-blend-mode: exclusion;
-            /* Similar to difference but with lower contrast. */
-
-            mix-blend-mode: hue;
-            /* Blends the hue of the image with the background. */
-
-            mix-blend-mode: saturation;
-            /* Blends the saturation of the image with the background. */
-
-            mix-blend-mode: color;
-            /* Blends the color (hue and saturation) of the image with the background while preserving the background's luminance. */
-
-            mix-blend-mode: luminosity;
-            /* Blends the luminance (brightness) of the image with the background while preserving the background's hue and saturation. */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/blending.css">
 </head>
 
 <body>

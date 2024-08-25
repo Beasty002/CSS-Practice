@@ -1,0 +1,19 @@
+img {
+    display: block;
+    height: 700px;
+    width: 400px;
+    object-fit: fill;
+    /* The image is resized to fill the container, distorting the image if necessary to match the container's size. */
+
+    object-fit: contain;
+    /* The image is resized to fit within the container while maintaining its aspect ratio. The entire image is visible, but there might be empty space within the container. */
+
+    object-fit: cover;
+    /* The image is resized to cover the entire container while maintaining its aspect ratio. The image might be cropped to fill the container. */
+
+    object-fit: none;
+    /* The image is not resized. It is displayed at its original size, and if it doesn't fit the container, it will be clipped. */
+
+    object-fit: scale-down;
+    /* The image is scaled down to the smallest size that fits within the container, preserving its aspect ratio. This is similar to 'contain' but does not scale up the image. */
+}

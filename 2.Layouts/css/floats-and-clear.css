@@ -1,0 +1,22 @@
+  /*Not a good way to approach layout so dont't use */
+  section {
+      border: 2px solid red;
+      /* overflow: auto; */
+      /*This doesn't let the content inside the container to over flow it also stops the visibility box shadow of the content if it overflows the container*/
+      display: flow-root;
+      /*Similar to overflow auto This doesn't let the content inside the container to over flow along with box shadow */
+
+
+  }
+
+  img {
+      float: left;
+      /*This makes the element float in the left meaning it allows contnet in the right of its side , if left is used than allows content on the right moving itself to the left side*/
+      /*this might make the image overflow*/
+      box-shadow: 10px 10px red;
+  }
+
+  p:nth-child(3) {
+      clear: left;
+      /*This does not allow contents to float on the direction specified in the value so it moves below the content,in this case on left , other value that can be used are right both and none*/
+  }

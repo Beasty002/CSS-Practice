@@ -1,0 +1,60 @@
+body {
+    margin: 0px auto;
+}
+
+.wrapper {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.wrapper1 {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 10px;
+    overflow-x: scroll;
+    /*This allows us to scroll horizantally incase of the content overflows the cotainer*/
+}
+
+.wrapper1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+}
+
+.wrapper1::-webkit-scrollbar {
+    width: 10px;
+    /* Adjust this value to change the width of the scrollbar */
+
+    height: 10px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+}
+
+.wrapper1::-webkit-scrollbar-thumb {
+    width: 30px;
+    background-color: #727272;
+    border-radius: 10px;
+}
+
+/*All the webkit's above allows us to customize the scrollbars*/
+
+
+.container {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: subgrid;
+    /* Used for grid nesting , the nested grid uses the the track of the parent*/
+    grid-row: span 3;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+
+}

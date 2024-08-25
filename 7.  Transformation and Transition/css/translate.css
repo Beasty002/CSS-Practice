@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    gap:
+        100px;
+    flex-wrap: wrap;
+}
+
+.parent {
+    height: 500px;
+    width: 500px;
+    background-color: coral;
+}
+
+.child {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.c1 {
+
+    translate: 50% 100%;
+    /*  this property allows us to define the x and y and z coordinate of an element in 2d and 3d space  
+    alternative way to use translate property is using transform like :-
+                "transform: translate(50%, 50%);"
+                The above code tells the browser to move the div 50% in x direction and 50% in y direction
+    */
+    /* here's how the percentage work in the translate : we have the child's height and width 200px 
+    the the c1 would move 50% of its width i.e 50/100*200 = 100px from left
+    and we have set the height t0 100% so the c1 would move 100/100*200 = 200px from top*/
+}
+
+.c2 {
+    background-color: red;
+    translate: 50px 0;
+    /* this moves the div 50px to the x directin i.e left to right 50px and 0px in y direction i.e 0px from top to bottom */
+    /* the value should be written either in x,y direction or in x,y,z */
+}
+
+.c3 {
+    background-color: violet;
+    translate: 20px 25%;
+
+}
+
+.p4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    /* this value represents how far the the viewers eye is from the screen the value for perspective around 1000px - 1500px is normally recommeded and it is normally given in parent container*/
+}
+
+.c4 {
+    background-color: green;
+    translate: 0px 60% 500px;
+    /* the smaller the difference between the perspective and translateZ values, the closer the user is to the element and the larger the translated element will seem */
+    /* the z axis represents the depth i.e forward or backward
+    positive value move the element closer to the viewer and the negative value moves the element away from the viewer 
+    here the 500px represents the element being 500px forward but no changes can be seen unless the parents has some perspective value set
+    */
+    /* short form  transform: perspective(1000px) translateX(0) translateY(60%) translateZ(500px);
+*/
+}
